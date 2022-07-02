@@ -5,3 +5,7 @@ dist
 .vscode
 .DS_Store
 >>>>>>> webpack-1
+*.sketch
+*.fig
+starter-code
+

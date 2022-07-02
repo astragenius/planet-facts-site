@@ -5,4 +5,103 @@
     font-style: normal;
     font-weight: 300;
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-  }
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-Light.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-ExtraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url(/src/assets/fonts/LeagueSpartan-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Antonio';
+  src: url(/src/assets/fonts/Antonio-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Antonio';
+  src: url(/src/assets/fonts/Antonio-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Antonio';
+  src: url(/src/assets/fonts/Antonio-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Antonio';
+  src: url(/src/assets/fonts/Antonio-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Antonio';
+  src: url(/src/assets/fonts/Antonio-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Antonio';
+  src: url(/src/assets/fonts/Antonio-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Antonio';
+  src: url(/src/assets/fonts/Antonio-Bold.ttf);
+  font-weight: 700;
+}
+
+
+html {
+  font-family: 'system';
+  
+}

@@ -1,7 +1,7 @@
 {
   "name": "webpacksetup",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Frontend environment for building JavaScipt Web-Applications\r #\r ##### Includes the following features:",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/astragenius/webpackSetup.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Astragenius",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/astragenius/webpackSetup/issues"
@@ -39,5 +39,8 @@
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
   }
 }
