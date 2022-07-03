@@ -1,0 +1,71 @@
+/**
+ * WRAPPER
+ * Sets a max width, adds a consistent gutter and horizontally
+ * centers the contents
+ */
+ .wrapper {
+    width: 90vw;
+    width: clamp(16rem, 90vw, 70rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+  }
+
+
+  // generate util color classes
+  
+@each $color, $value in $primaryColors {
+
+    .bg-#{$color} {
+        background-color: #{$value};
+    };
+
+    .fc-#{$color} {
+        color: #{$value};
+    };
+};
+@each $color, $value in $planetColor {
+
+    .bg-focus-#{$color} {
+        background-color: #{$value};
+    };
+};
+
+
+// Font Util classes
+
+@each $font, $value in $fonts {
+
+    .ff-#{$font} {
+        font-family: #{$value};
+    }
+}
+@each $size, $value in $font-size {
+
+    .fs-#{$size} {
+        font-size: #{$value};
+    }
+}
+@each $size, $value in $font-weight {
+    
+    .fw-#{$size} {
+        font-weight: #{$value};
+    }
+}
+
+// letter-spacing and line-heihgt util classes
+
+@each $size, $value in $letter-spacing {
+
+    .space-#{$size} {
+        letter-spacing: #{$value};
+    }
+}
+@each $size, $value in $line-height {
+
+    .line-#{$size} {
+        line-height: #{$value};
+    }
+}
