@@ -1,0 +1,28 @@
+.button-container {
+
+    display: flex;
+    justify-content: space-between;
+    gap: rem(20)
+}
+
+
+
+// for Desktop version
+.btn {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: rem(25);
+    border: 1px solid #38384f;
+    cursor: pointer;
+    padding: rem(12) rem(28);
+
+    &:not(.active-venus):hover {
+        background-color: #38384f;
+
+    }
+}
+
+.btn-number {
+    opacity: 0.5;
+}
