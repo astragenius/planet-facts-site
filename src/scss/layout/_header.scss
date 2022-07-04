@@ -1,0 +1,25 @@
+header {
+    min-height: calc(100vh - 93vh);
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include breakpoint-up('tiny') {
+
+        flex-direction: column;
+    }
+
+    @include breakpoint-up('small') {
+        flex-direction: row;
+    }
+   
+    
+}
+
