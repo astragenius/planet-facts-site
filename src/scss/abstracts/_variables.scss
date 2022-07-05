@@ -1,14 +1,68 @@
 
 // COLORS
 
+:root {
+
+    --cl-dark: 240 66% 8%;
+    --cl-light: 0 0% 100%;
+    --cl-dark-grey: 240 17% 26%;
+    --cl-light-grey: 240 6% 54%;
+    --cl-border-grey: 0 0% 59%;
+
+    --cl-mercury: 194 48% 49%;
+    --cl-venus: 33 82% 61%;
+    --cl-earth: 263 67% 51%;
+    --cl-mars: 10 63% 51%;
+    --cl-jupiter: 2 68% 53%;
+    --cl-saturn: 17 73% 46%;
+    --cl-uranus: 169 73% 44%;
+    --cl-neptune: 222 87% 56%;
+
+    /* Font Family */
+    --ff-antonio: 'Antonio';
+    --ff-spartan: 'Spartan';
+
+    /* Font-Size */
+
+    /* mobile-version */
+    --fs-900: rem(40);
+    --fs-800: rem(28);
+    --fs-700: rem(20);
+    --fs-600: rem(15); 
+
+
+    /* font-weight */
+    --fw-900: 900;
+    --fw-800: 800;
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+    --fw-400: 400;
+    --fw-300: 300;
+    --fw-200: 200;
+    --fw-100: 100;
+
+    /* line-height */
+    --lh-xl: 103px;
+    --lh-l: 53px;
+    --lh-m: 25px;
+
+    /* letter spacing */
+    --l-space-xl: 2.6px;
+    --l-space-l: 1px;
+    --l-space-m: -1.5px;
+     
+
+}
+
 //primary colors
 
  
-$dark: #070722;
-$light: #ffff;
-$dark-grey: #38384f;
-$light-grey: #838391;
-$border-grey: #979797;
+$dark: hsl(240, 66%, 8%);
+$light: hsl(0, 0%, 100%);
+$dark-grey: hsl(240, 17%, 26%);
+$light-grey: hsl(240, 6%, 54%);
+$border-grey: hsl(0, 0%, 59%);
 
 
 $primaryColors:(
@@ -22,72 +76,3 @@ $primaryColors:(
     
     // Planet Colors
     
-$planetColor: (
-    
-    mercury: #419ebb,
-        
-    venus: #eda249,
-        
-    earth: #6f2ed6,
-        
-    mars: #d14c32,
-        
-    jupiter: #d83a34,
-        
-    saturn: #cd5120,
-        
-    uranus: #1ec2a4,
-        
-    neptune: #2d68f0,    
-);
-
-$fonts: (
-
-    antonio: 'Antonio',
-    spartan: 'Spartan',
-
-);
-
-$font-size: (
-
-    900: clamp(2.50rem, calc(1.62rem + 3.76vw), 5.00rem), // 40px - 80px (max) h1
-    800: clamp(1.25rem, calc(0.81rem + 1.88vw), 2.50rem), // 20px - 40px (max) h2
-    700: rem(28), // dosent change on mobile and desktop
-    500: clamp(0.69rem, calc(0.62rem + 0.28vw), 0.88rem), // 11px - 14px (max) body
-    400: clamp(0.56rem, calc(0.50rem + 0.28vw), 0.75rem), // 8px - 12px (max) button
-    300: clamp(0.50rem, calc(0.43rem + 0.28vw), 0.69rem), // 8px - 11px h4
-
-);
-$font-weight: (
-
-    900: 900,
-    800: 800,
-    700: 700,
-    600: 600,
-    500: 500,
-    400: 400,
-    300: 300,
-    200: 200,
-    100: 100,
-    
-    
-);
-
-
-
-$line-height: (
-
-    xl: 103px,
-    l: 53px,
-    m: 25px,
-     
-);
-
-$letter-spacing: (
-    
-    xl: 2.6px,
-    l: 1px,
-    m: -1.5px,
-);
-
-

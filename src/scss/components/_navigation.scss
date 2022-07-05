@@ -29,7 +29,7 @@
 
 .main-navigation-items {
     position: fixed;
-    color: white;
+    color: hsl(var(--cl-light) );
     padding: 0;
     inset: 0 0 0 0;
     display: flex;
@@ -40,7 +40,7 @@
         position: static;
         flex-direction: row;
         text-align: center;
-        font-size: clamp(0.69rem, calc(0.62rem + 0.28vw), 0.88rem);
+        
         
        
     }  
@@ -53,10 +53,10 @@
    
     a {
         text-decoration: none;
-        color: $light-grey;
+        color: hsl(var(--cl-light-grey) );
 
         &:hover {
-            color: $light;
+            color: hsl(var(--cl-light) );
         }
     }
     

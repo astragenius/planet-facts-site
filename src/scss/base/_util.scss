@@ -18,58 +18,37 @@
     text-transform: uppercase;
 }
 
-  // generate util color classes
+ /* Color */
+ .fc-dark { color: hsl(var(--cl-dark) )};
+ .fc-light { color: hsl(var(--cl-light) )};
+ .fc-dark-grey { color: hsl(var(--cl-dark-grey) )};
+ .fc-light-grey { color: hsl(var(--cl-light-grey) )};
+
+ 
+ .bg-dark { background-color: hsl(var(--cl-dark) )};
+ .bg-light { background-color: hsl(var(--cl-light) )};
+ .bg-dark-grey { background-color: hsl(var(--cl-dark-grey) )};
+ .bg-light-grey { background-color: hsl(var(--cl-light-grey) )};
+
+ /* Planet Colors */
+ .bg-mercury { background-color: hsl(var(--cl-mercury) );};
+ .bg-venus { background-color: hsl(var(--cl-mercury) );};
+ .bg-earth { background-color: hsl(var(--cl-mercury) );};
+ .bg-mars { background-color: hsl(var(--cl-mercury) );};
+ .bg-jupiter { background-color: hsl(var(--cl-mercury) );};
+ .bg-saturn { background-color: hsl(var(--cl-mercury) );};
+ .bg-uranus { background-color: hsl(var(--cl-mercury) );};
+ .bg-neptune { background-color: hsl(var(--cl-neptuen) );};
+ 
+
+
+ /* fonts */
+ .ff-antonio { font-family: var(--ff-antonio);};
+ .ff-spartan { font-family: var(--ff-spartan);};
+ 
+
+ 
+ 
+
+
   
-@each $color, $value in $primaryColors {
-
-    .bg-#{$color} {
-        background-color: #{$value};
-    };
-
-    .fc-#{$color} {
-        color: #{$value};
-    };
-};
-@each $color, $value in $planetColor {
-
-    .active-#{$color} {
-        background-color: #{$value};
-    };
-};
-
-
-// Font Util classes
-
-@each $font, $value in $fonts {
-
-    .ff-#{$font} {
-        font-family: #{$value};
-    }
-}
-@each $size, $value in $font-size {
-
-    .fs-#{$size} {
-        font-size: #{$value};
-    }
-}
-@each $size, $value in $font-weight {
-    
-    .fw-#{$size} {
-        font-weight: #{$value};
-    }
-}
-
-// letter-spacing and line-heihgt util classes
-
-@each $size, $value in $letter-spacing {
-
-    .space-#{$size} {
-        letter-spacing: #{$value};
-    }
-}
-@each $size, $value in $line-height {
-
-    .line-#{$size} {
-        line-height: #{$value};
-    }
-}
