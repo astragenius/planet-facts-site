@@ -15,7 +15,8 @@
     @include breakpoint-up('tiny') {
 
         display: block;
-        padding: clamp(2rem, 1vh, 5rem) 1rem;
+        padding-top: rem(32);
+        padding-bottom: rem(16);
     }
 
     @include breakpoint-up('small') {
