@@ -2,6 +2,13 @@ header {
     min-height: calc(100vh - 93vh);
 }
 
+/* Background color and image (stars) */
+.star-bg {
+    background: url(/src/assets/images/background-stars.svg) hsl(var(--cl-dark) ) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
