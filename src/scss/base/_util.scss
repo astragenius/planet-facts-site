@@ -13,6 +13,31 @@
     position: relative;
 }
 
+/* continious flow flow of all elements */
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+.splitter > :last-child {
+
+    margin-top: var(--flow-space);
+}
+
+/* Only Seen by screen readers */
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
 
 .uppercase {
     text-transform: uppercase;
@@ -46,9 +71,39 @@
  .ff-antonio { font-family: var(--ff-antonio);};
  .ff-spartan { font-family: var(--ff-spartan);};
  
+/* Font - Sizes */
+
+.fs-900 { font-size: var(--fs-900); };
+.fs-850 { font-size: var(--fs-850); };
+.fs-700 { font-size: var(--fs-800); };
+.fs-650 { font-size: var(--fs-650); };
+.fs-600 { font-size: var(--fs-600); };
+.fs-500 { font-size: var(--fs-500); };
+.fs-400 { font-size: var(--fs-400); };
+.fs-300 { font-size: var(--fs-300); };
+.fs-200 { font-size: var(--fs-200); };
+.fs-100 { font-size: var(--fs-100); };
+
+/* Font weight */
+.fw-900 { font-weight: 900; }; 
+.fw-800 { font-weight: 800; }; 
+.fw-700 { font-weight: 700; }; 
+.fw-600 { font-weight: 600; }; 
+.fw-500 { font-weight: 500; }; 
+.fw-400 { font-weight: 400; }; 
+.fw-300 { font-weight: 300; }; 
+.fw-200 { font-weight: 200; }; 
+.fw-100 { font-weight: 100; }; 
+
+/* Line - height */
+.line-xl { line-height: var(--lh-xl); };
+.line-l { line-height: var(--lh-l); };
+.line-m { line-height: var(--lh-m); };
+
+/* letter Spacing */
+
+.letter-space-xl { letter-spacing: var(--l-space-xl); };
+.letter-space-l { letter-spacing: var(--l-space-l); };
+.letter-space-m { letter-spacing: var(--l-space-m); }; 
 
  
- 
-
-
-  

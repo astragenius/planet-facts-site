@@ -100,6 +100,36 @@
   font-weight: 700;
 }
 
+ 
+:root {
+    
+  @include breakpoint-up('tiny') {
+
+      --fs-nav: var(--fs-300);
+
+      --fs-planet: var(--fs-850);
+
+      --fs-data: var(--fs-650);
+  }
+  @include breakpoint-up('small') {
+
+      --fs-tap: var(--fs-400);
+      --fs-planet: var(--fs-900);
+
+      --fs-text: var(--fs-500);
+
+      --fs-facts: var(--fs-300);
+      --fs-data: var(--fs-800);
+
+      --fs-wiki: var(--fs-500);
+
+  }
+}
+
+
+
+
+
 
 html {
   font-family: 'system';

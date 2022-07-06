@@ -3,6 +3,10 @@
 
 :root {
 
+
+
+    /* COLORS */
+
     --cl-dark: 240 66% 8%;
     --cl-light: 0 0% 100%;
     --cl-dark-grey: 240 17% 26%;
@@ -24,11 +28,35 @@
 
     /* Font-Size */
 
-    /* mobile-version */
-    --fs-900: rem(40);
-    --fs-800: rem(28);
-    --fs-700: rem(20);
-    --fs-600: rem(15); 
+   
+    --fs-900: rem(80);
+    --fs-850: rem(48);
+    --fs-800: rem(40);
+    --fs-700: rem(28);
+    --fs-650: rem(24);
+    --fs-600: rem(20);
+    --fs-500: rem(15); 
+    --fs-400: rem(12);
+    --fs-300: rem(11);
+    --fs-200: rem(9);
+    --fs-100: rem(8);
+
+
+    --fs-heading: var(--fs-700);
+    --fs-nav: var(--fs-500);
+
+    --fs-tap: var(--fs-200);
+    --fs-planet: var(--fs-800);
+
+    --fs-text: var(--fs-300);
+
+    --fs-facts: var(--fs-100);
+    --fs-data: var(--fs-600);
+
+    --fs-wiki: var(--fs-400);
+
+    
+
 
 
     /* font-weight */
@@ -51,28 +79,16 @@
     --l-space-xl: 2.6px;
     --l-space-l: 1px;
     --l-space-m: -1.5px;
+
+
+    /* Spacing Units */
+
+    --flow-space: 1em;
      
 
 }
 
-//primary colors
-
- 
-$dark: hsl(240, 66%, 8%);
-$light: hsl(0, 0%, 100%);
-$dark-grey: hsl(240, 17%, 26%);
-$light-grey: hsl(240, 6%, 54%);
-$border-grey: hsl(0, 0%, 59%);
 
 
-$primaryColors:(
-    
-    
-    dark: #070722,
-    light: #ffff,
-    dark-grey: #38384f,
-    light-grey: #838391,
- );
-    
-    // Planet Colors
+
     

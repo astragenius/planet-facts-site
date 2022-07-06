@@ -79,7 +79,7 @@
 
  .line {
     display: block;
-    background-color: white;
+    background-color: hsl(var(--cl-light) );
     width: rem(30);
     height: rem(3);
     margin-top: rem(5);
