@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+
+
+    grid-template-areas: 
+    
+                'img-container'
+                'taps'
+                'planet-text'
+                'planet-facts';
+}
+

@@ -39,6 +39,13 @@
 }
 
 
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+  
+
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -83,6 +90,19 @@
 .fs-300 { font-size: var(--fs-300); };
 .fs-200 { font-size: var(--fs-200); };
 .fs-100 { font-size: var(--fs-100); };
+
+
+.fs-heading { font-size: var(--fs-heading); };
+.fs-nav { font-size: var(--fs-nav); };
+.fs-tap { font-size: var(--fs-tap); };
+.fs-planet { font-size: var(--fs-planet); };
+.fs-text { font-size: var(--fs-text); };
+.fs-facts { font-size: var(--fs-facts); };
+.fs-data { font-size: var(--fs-data); };
+.fs-wiki { font-size: var(--fs-wiki); };
+
+
+
 
 /* Font weight */
 .fw-900 { font-weight: 900; }; 

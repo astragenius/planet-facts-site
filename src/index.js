@@ -4,7 +4,9 @@ import earth from './assets/images/planet-earth.svg'
 import data from './assets/data/data.json'
 
 const open = document.querySelector('.nav-mobile-btn')
+const planetImg = document.querySelector('.planet-img')
 
+planetImg.src = earth
 function openAnimation() {
     anime({
         targets: '.nav-mobile-btn.open .line1',

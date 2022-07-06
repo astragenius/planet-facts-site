@@ -17,11 +17,11 @@ header {
     justify-content: space-between;
     align-items: center;
     --white: 0 0% 100%;
+    border-bottom: 1px solid hsl(var(--white) / 0.2);
 
     @include breakpoint-up('tiny') {
 
         flex-direction: column;
-        border-bottom: 1px solid hsl(var(--white) / 0.2);
     }
 
     @include breakpoint-up('small') {

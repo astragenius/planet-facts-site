@@ -1,15 +1,43 @@
-.button-container {
+/* TAPS (BUTTONS) Mobile First */
+
+
+
+.taps-container {
 
     display: flex;
     justify-content: space-between;
-    gap: rem(20)
+    gap: rem(10);
+    border-bottom: 1px solid hsl(var(--cl-light) / 0.2)
+
+}
+
+.tap-btn {
+    background: transparent;
+    border: none;
+    flex: 1;
+    padding: rem(20) rem(0);
 }
 
 
 
+
+/* .tap-container {
+
+    display: flex;
+    justify-content: space-between;
+    gap: rem(20)
+} */
+
+
+
+
+
+
+
+
 // for Desktop version
-.btn {
-    flex: 1;
+/* .btn {
+    flex: 1; 
     display: flex;
     justify-content: flex-start;
     gap: rem(25);
@@ -25,4 +53,4 @@
 
 .btn-number {
     opacity: 0.5;
-}
+} */
