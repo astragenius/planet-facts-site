@@ -53,7 +53,7 @@
    
     a {
         text-decoration: none;
-        color: hsl(var(--cl-light-grey) );
+        color: hsl(var(--cl-light) / 0.75 );
 
         &:hover {
             color: hsl(var(--cl-light) );
