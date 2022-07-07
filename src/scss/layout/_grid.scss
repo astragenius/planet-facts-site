@@ -10,3 +10,10 @@
                 'planet-facts';
 }
 
+.planet-container {
+    grid-area: 'img-container';
+}
+
+.taps {
+    grid-area: 'taps';
+}

@@ -8,43 +8,46 @@
 <body class="star-bg">
 
 
-    <header class="[ header ] [ wrapper ] ">
-     
-        <h1 class="ff-antonio fc-light uppercase space-m fs-heading">The Planets</h1>
-
-      
-
-      <nav aria-expanded="false" class="main-navigation">
+    <header class="header">
+      <div class="wrapper">
         
-        <ul class="main-navigation-items uppercase ff-spartan fw-700 line-m space-l">
-          <li class="main-navigation-item"><a class="fs-nav" href="#">Mercury</a></li>
-          <li class="main-navigation-item"><a class="fs-nav" href="">Venus</a></li>
-          <li class="main-navigation-item"><a class="fs-nav" href="">Earth</a></li>
-          <li class="main-navigation-item"><a class="fs-nav" href="">Mars</a></li>
-          <li class="main-navigation-item"><a class="fs-nav" href="">Jupiter</a></li>
-          <li class="main-navigation-item"><a class="fs-nav" href="">Saturn</a></li>
-          <li class="main-navigation-item"><a class="fs-nav" href="">Uranus</a></li>
-          <li class="main-navigation-item"><a class="fs-nav" href="">Neptune</a></li>
-        </ul>
+           <h1 class="ff-antonio fc-light uppercase space-m fs-heading">The Planets</h1>
+   
+         
+   
+         <nav aria-expanded="false" class="main-navigation">
+           
+           <ul class="main-navigation-items uppercase ff-spartan fw-700 line-m space-l">
+             <li class="main-navigation-item"><a class="fs-nav" href="#">Mercury</a></li>
+             <li class="main-navigation-item"><a class="fs-nav" href="">Venus</a></li>
+             <li class="main-navigation-item"><a class="fs-nav" href="">Earth</a></li>
+             <li class="main-navigation-item"><a class="fs-nav" href="">Mars</a></li>
+             <li class="main-navigation-item"><a class="fs-nav" href="">Jupiter</a></li>
+             <li class="main-navigation-item"><a class="fs-nav" href="">Saturn</a></li>
+             <li class="main-navigation-item"><a class="fs-nav" href="">Uranus</a></li>
+             <li class="main-navigation-item"><a class="fs-nav" href="">Neptune</a></li>
+           </ul>
+   
+           
+         </nav>
+         
+                 <button class="nav-mobile-btn ">
+                   <span class="sr-only">Menu Button</span>
+                   <span class="line line1"></span>
+                   <span class="line line2"></span>
+                   <span class="line line3"></span>
+                 </button>
+         
+       </header>
 
-        
-      </nav>
-      
-              <button class="nav-mobile-btn ">
-                <span class="sr-only">Menu Button</span>
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </button>
-      
-    </header>
+      </div>
 
     <main class="wrapper">
 
       <div class="grid-container">
 
         
-                <section class="taps full-bleed">
+                <section class="taps">
                   <div class="taps-container fs-tap fw-600 letter-space-xl">
                     <button class="tap-btn ff-spartan uppercase fc-light">Overview</button>
                     <button class="tap-btn ff-spartan uppercase fc-light">Structure</button>
@@ -65,7 +68,11 @@
                   <article class="planet-text fc-light">
                     <h2 class="uppercase ff-antonio fs-planet fw-400 line-l">Earth</h2>
                     <p class="fw-400 ff-spartan fs-text line-m">Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
-                    <div><span>Source:</span><a href="">Wikipedia</a></div>
+                    <div class="wiki-link">
+                      <span>Source:</span>
+                      <span><a href="">Wikipedia</a></span> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="#FFF" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".5"/></svg>
+                    </div>
 
                   </article>
                 </section>
