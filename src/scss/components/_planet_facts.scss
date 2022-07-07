@@ -1,0 +1,21 @@
+.planet-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: rem(15);
+}
+
+.planet-fact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid hsl(var(--cl-border-grey) /.5);
+
+    padding: rem(10) rem(24);
+
+    @include breakpoint-up('tiny') {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+

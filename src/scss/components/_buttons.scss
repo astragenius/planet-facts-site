@@ -1,13 +1,17 @@
 /* TAPS (BUTTONS) Mobile First */
 
-
-
 .taps-container {
 
     display: flex;
     justify-content: space-between;
     gap: rem(10);
-    border-bottom: 1px solid hsl(var(--cl-light) / 0.2)
+    border-bottom: 1px solid hsl(var(--cl-light) / 0.2);
+
+    @include breakpoint-up('tiny') {
+        border: none;
+        flex-direction: column;
+        min-width: rem(280);
+    }
 
 }
 
@@ -16,11 +20,19 @@
     border: none;
     flex: 1;
     padding: rem(20) rem(0);
+    cursor: pointer;
+
+    @include breakpoint-up('tiny') {
+        border: 1px solid hsl(var(--cl-light) / 0.2);
+        text-align: left;
+        padding: rem(15) rem(20);
+    }
 }
 
 
 .tap-number {
     opacity: 0.5;
+    margin-right: rem(10);
 }
 
 /* .tap-container {

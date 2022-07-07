@@ -1,7 +1,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 2px solid magenta;
+    /* border: 2px solid magenta; */
+    grid-gap: rem(20);
     
 
 
@@ -42,6 +43,8 @@
 
 .taps {
     grid-area: taps;
+    justify-self: right;
+    align-self: center;
 }
 
 .planet-facts {

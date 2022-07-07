@@ -56,6 +56,8 @@
  .fc-dark-grey { color: hsl(var(--cl-dark-grey) )};
  .fc-light-grey { color: hsl(var(--cl-light-grey) )};
 
+ .fc-low-light { color: hsl(var(--cl-light) / 0.5) };
+
  
  .bg-dark { background-color: hsl(var(--cl-dark) )};
  .bg-light { background-color: hsl(var(--cl-light) )};

@@ -1,9 +1,12 @@
 .planet-container {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .planet-img {
     position: relative;
+    //width: rem(173);
 }
 
 .planet-geology {
@@ -15,4 +18,8 @@
 
 .planet-text {
     text-align: center;
+
+    @include breakpoint-up('tiny') {
+        text-align: left;
+    }
 }
