@@ -1,19 +1,49 @@
 .grid-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid magenta;
+    
 
 
     grid-template-areas: 
+   
+               "taps taps"
+               "img-container img-container"
+               "planet-text planet-text"
+               "planet-facts planet-facts";
     
-                'img-container'
-                'taps'
-                'planet-text'
-                'planet-facts';
+    
+
+    @include breakpoint-up('tiny') {
+        grid-template-areas: 
+                "img-container img-container"
+                "planet-text taps"
+                "planet-facts planet-facts";
+    }
+
+    @include breakpoint-up('small') {
+        grid-template-areas: 
+                "img-container planet-text"
+                "img-container taps"
+                "planet-facts planet-facts";
+    }
+    
 }
+
+
 
 .planet-container {
-    grid-area: 'img-container';
+    grid-area: img-container;
+}
+.planet-content {
+    grid-area: planet-text;
 }
 
+
 .taps {
-    grid-area: 'taps';
+    grid-area: taps;
+}
+
+.planet-facts {
+    grid-area: planet-facts;
 }

@@ -1,3 +1,18 @@
+.planet-container {
+    position: relative;
+}
+
+.planet-img {
+    position: relative;
+}
+
+.planet-geology {
+    position: relative;
+    width: rem(163);
+    inset: -15% 0 0 25%;
+    
+}
+
 .planet-text {
     text-align: center;
 }

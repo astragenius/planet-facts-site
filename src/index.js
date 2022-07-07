@@ -1,12 +1,15 @@
 import './scss/index.scss'
 import anime from 'animejs/lib/anime.es.js'
 import earth from './assets/images/planet-earth.svg'
+import earthGeo from './assets/images/geology-earth.png'
 import data from './assets/data/data.json'
 
 const open = document.querySelector('.nav-mobile-btn')
 const planetImg = document.querySelector('.planet-img')
+const planetGeo = document.querySelector('.planet-geology')
 
 planetImg.src = earth
+planetGeo.src = earthGeo
 function openAnimation() {
     anime({
         targets: '.nav-mobile-btn.open .line1',
