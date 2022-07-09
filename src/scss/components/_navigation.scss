@@ -11,12 +11,13 @@
  .main-navigation {
     position: relative;
     width: 100%;
+   // border: 2px solid tomato;
 
     @include breakpoint-up('tiny') {
 
         display: block;
-        padding-top: rem(32);
-        padding-bottom: rem(16);
+        padding-top: rem(16);
+        
     }
 
     @include breakpoint-up('small') {
@@ -34,34 +35,40 @@
     inset: 0 0 0 0;
     display: flex;
     flex-direction: column;
-
+    
     @include breakpoint-up('tiny') {
         display: flex;
         position: static;
         flex-direction: row;
         text-align: center;
+        //border: 2px solid magenta;
         
-        
-       
+    
     }  
     
 }
 .main-navigation-item {
     flex: 1;
     list-style: none;
-   // border: 2px solid magenta;
+    display: block;
+    //border: 2px solid magenta;
    
     a {
+        padding-bottom: rem(20);
         text-decoration: none;
         color: hsl(var(--cl-light) / 0.75 );
 
-        &:hover {
-            color: hsl(var(--cl-light) );
-        }
     }
-    
+    &:hover {
+        color: hsl(var(--cl-light) );
+        border-bottom: 3px solid hsl(var(--cl-earth) );
+        /* Maybe i find a another solution for the bouncing problem */
+        //padding-bottom: calc(rem(20) - 3px);
+    }
 
 }
+
+
 
 
  .nav-mobile-btn {

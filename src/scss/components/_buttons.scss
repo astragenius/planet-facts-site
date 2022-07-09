@@ -1,5 +1,15 @@
 /* TAPS (BUTTONS) Mobile First */
 
+.taps-container.earth > button  {
+
+
+    &:focus {
+            background-color: hsl(var(--cl-earth) );
+        
+    }
+}
+
+
 .taps-container {
 
     display: flex;
@@ -32,9 +42,7 @@
         border-color: transparent;
     }
 
-    &:focus {
-        background-color: hsl(var(--cl-earth) );
-    }
+    
 
     @include breakpoint-up('tiny') {
         border: 1px solid hsl(var(--cl-light) / 0.2);
