@@ -2,11 +2,12 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .planet-img {
     position: relative;
-    //width: rem(173);
+   
 }
 
 .planet-geology {
@@ -16,10 +17,16 @@
     
 }
 
+.planet-content {
+    max-width: rem(350);
+}
+
+
 .planet-text {
     text-align: center;
 
     @include breakpoint-up('tiny') {
         text-align: left;
+        max-width: 45ch;
     }
 }

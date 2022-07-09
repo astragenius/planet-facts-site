@@ -13,7 +13,13 @@
         min-width: rem(280);
     }
 
+    @include breakpoint-up('small') {
+        min-width: rem(350);
+    }
+
 }
+
+
 
 .tap-btn {
     background: transparent;
@@ -26,45 +32,24 @@
         border: 1px solid hsl(var(--cl-light) / 0.2);
         text-align: left;
         padding: rem(15) rem(20);
+        
     }
 }
 
 
 .tap-number {
-    opacity: 0.5;
-    margin-right: rem(10);
-}
+    display: none;
+    @include breakpoint-up('tiny') {
 
-/* .tap-container {
-
-    display: flex;
-    justify-content: space-between;
-    gap: rem(20)
-} */
-
-
-
-
-
-
-
-
-// for Desktop version
-/* .btn {
-    flex: 1; 
-    display: flex;
-    justify-content: flex-start;
-    gap: rem(25);
-    border: 1px solid #38384f;
-    cursor: pointer;
-    padding: rem(12) rem(28);
-
-    &:not(.active-venus):hover {
-        background-color: #38384f;
-
+        opacity: 0.5;
+        margin-right: rem(10);
     }
 }
 
-.btn-number {
-    opacity: 0.5;
-} */
+.tap-hide {
+    display: none;
+
+    @include breakpoint-up('tiny') {
+        display: inline-block;
+    }
+}
