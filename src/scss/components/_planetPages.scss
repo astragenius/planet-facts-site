@@ -10,6 +10,9 @@
 
             max-width: rem(184);
         }
+        @include breakpoint-up('small') {
+            max-width: 100%;
+        }
        
     }
     
@@ -35,6 +38,9 @@
         @include breakpoint-up('tiny') {
 
             max-width: rem(253);
+        }
+        @include breakpoint-up('small') {
+            max-width: 100%;
         }
        
     }
@@ -62,6 +68,9 @@
 
             max-width: rem(285);
         }
+        @include breakpoint-up('small') {
+            max-width: 100%;
+        }
        
     }
     
@@ -87,6 +96,9 @@
         @include breakpoint-up('tiny') {
 
             max-width: rem(213);
+        }
+        @include breakpoint-up('small') {
+            max-width: 100%;
         }
        
     }
@@ -114,6 +126,9 @@
 
             max-width: rem(369);
         }
+        @include breakpoint-up('small') {
+            max-width: 100%;
+        }
        
     }
     
@@ -139,6 +154,9 @@
         @include breakpoint-up('tiny') {
 
             max-width: rem(422);
+        }
+        @include breakpoint-up('small') {
+            max-width: 100%;
         }
        
     }
@@ -166,6 +184,9 @@
 
             max-width: rem(290);
         }
+        @include breakpoint-up('small') {
+            max-width: 100%;
+        }
        
     }
     
@@ -191,6 +212,9 @@
         @include breakpoint-up('tiny') {
 
             max-width: rem(285);
+        }
+        @include breakpoint-up('small') {
+            max-width: 100%;
         }
        
     }
