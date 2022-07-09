@@ -1,0 +1,211 @@
+[data-planet="mercury"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(111);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(184);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-mercury) );
+            
+        }
+    }
+}
+
+[data-planet="venus"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(154);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(253);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-venus) );
+            
+        }
+    }
+}
+
+[data-planet="earth"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(173);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(285);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-earth) );
+            
+        }
+    }
+}
+
+[data-planet="mars"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(129);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(213);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-mars) );
+            
+        }
+    }
+}
+[data-planet="jupiter"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(224);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(369);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-jupiter) );
+            
+        }
+    }
+}
+[data-planet="saturn"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(256);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(422);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-saturn) );
+            
+        }
+    }
+}
+[data-planet="uranus"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(176);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(290);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-uranus) );
+            
+        }
+    }
+}
+[data-planet="neptune"] {
+
+
+    .planet-img {
+        position: relative;
+        
+        max-width: rem(173);
+
+        @include breakpoint-up('tiny') {
+
+            max-width: rem(285);
+        }
+       
+    }
+    
+
+
+    .taps-container > button  {
+
+
+        &:focus {
+                background-color: hsl(var(--cl-neptune) );
+            
+        }
+    }
+}
