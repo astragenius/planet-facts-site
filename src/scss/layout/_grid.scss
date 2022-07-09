@@ -1,7 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: max(120px, 100px) repeat (2, 1fr) max(120px, 100px);
-    /* border: 2px solid magenta; */
+    grid-template-columns: 120px repeat (2, 1fr) 120px;
     grid-gap: rem(20);
     height: 80vh;
     
@@ -36,15 +35,22 @@
 
 .planet-container {
     grid-area: img-container;
-    align-self: center;
-    justify-self: center;
+
+    @include breakpoint-up('small') {
+
+        align-self: center;
+        justify-self: center;
+    }
 
  
 }
 .planet-content {
     grid-area: planet-text;
-    align-self: flex-end;
-    justify-self: right;
+    @include breakpoint-up('small') {
+
+        align-self: flex-end;
+        justify-self: right;
+    }
    
     
 }
@@ -62,5 +68,5 @@
 
 .planet-facts {
     grid-area: planet-facts;
-    align-self: flex-end;
+    align-self: center;
 }

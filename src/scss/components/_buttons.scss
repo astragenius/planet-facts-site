@@ -19,14 +19,22 @@
 
 }
 
-
-
 .tap-btn {
     background: transparent;
     border: none;
     flex: 1;
     padding: rem(20) rem(0);
     cursor: pointer;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-color: hsl(var(--cl-light-grey) / 0.4);
+        border-color: transparent;
+    }
+
+    &:focus {
+        background-color: hsl(var(--cl-earth) );
+    }
 
     @include breakpoint-up('tiny') {
         border: 1px solid hsl(var(--cl-light) / 0.2);
@@ -40,7 +48,7 @@
 .tap-number {
     display: none;
     @include breakpoint-up('tiny') {
-
+        display: inline-block;
         opacity: 0.5;
         margin-right: rem(10);
     }
