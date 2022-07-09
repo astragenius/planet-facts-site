@@ -16,7 +16,7 @@
     @include breakpoint-up('tiny') {
 
         display: block;
-        padding-top: rem(16);
+        
         
     }
 
@@ -50,23 +50,27 @@
 .main-navigation-item {
     flex: 1;
     list-style: none;
-    display: block;
     //border: 2px solid magenta;
-   
+    
+    margin: 0;
+    padding: 0;
+    
     a {
-        padding-bottom: rem(20);
+        display: inline-block;
+        position: relative;
         text-decoration: none;
         color: hsl(var(--cl-light) / 0.75 );
 
-    }
-    &:hover {
-        color: hsl(var(--cl-light) );
-        border-bottom: 3px solid hsl(var(--cl-earth) );
-        /* Maybe i find a another solution for the bouncing problem */
-        //padding-bottom: calc(rem(20) - 3px);
+        &:hover {
+            color: hsl(var(--cl-light));
+        }
+
     }
 
+   
+    
 }
+
 
 
 
