@@ -1,23 +1,26 @@
-.planet-container {
-    position: relative;
+.planet-container { 
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: rem(30);
+    margin-bottom: rem(30);
 }
 
-.planet-img {
+.planet-img-container {
     position: relative;
 
-    @include breakpoint-up('small') {
-        max-width: 100%;
-    }
-   
 }
 
+
 .planet-geology {
+    display: inline-block;
     position: absolute;
-    width: rem(163);
-    inset: -15% 0 0 25%;
+    width: clamp(rem(80), rem(40) + 8vw, rem(163));
+    top: 60%;
+    left: 30%;
+    //left: clamp(30%, )
+    
     
 }
 

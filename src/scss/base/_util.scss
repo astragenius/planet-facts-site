@@ -148,6 +148,14 @@
     height: 3px;
     inset: 45px 0 0 0;
  }
+ .hover:focus {
+   position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    inset: 45px 0 0 0;
+ }
+ 
  .hover:hover::after{
     width: 100%;
  }
@@ -158,7 +166,8 @@
  .hover.venus::after {
     background-color: hsl(var(--cl-venus) );
  }
- .hover.earth::after {
+ .hover.earth::after,
+ .hover.earth:focus {
     background-color: hsl(var(--cl-earth) );
  }
 

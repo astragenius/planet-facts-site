@@ -1,4 +1,8 @@
-
+header {
+    
+    --white: 0 0% 100%;
+    border-bottom: 1px solid hsl(var(--white) / 0.2);
+}
 
 /* Background color and image (stars) */
 .star-bg {
@@ -14,8 +18,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    --white: 0 0% 100%;
-    border-bottom: 1px solid hsl(var(--white) / 0.2);
+    padding-top: rem(16);
+    padding-bottom: rem(16);
 
     @include breakpoint-up('tiny') {
 

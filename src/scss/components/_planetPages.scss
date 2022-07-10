@@ -2,7 +2,7 @@
 
 
     .planet-img {
-        position: relative;
+        
         
         max-width: rem(111);
 
@@ -31,7 +31,7 @@
 
 
     .planet-img {
-        position: relative;
+      
         
         max-width: rem(154);
 
@@ -60,9 +60,10 @@
 
 
     .planet-img {
-        position: relative;
         
+       
         max-width: rem(173);
+       
 
         @include breakpoint-up('tiny') {
 
@@ -72,6 +73,9 @@
             max-width: 100%;
         }
        
+    }
+    .planet-geology {
+        
     }
     
 
@@ -89,7 +93,7 @@
 
 
     .planet-img {
-        position: relative;
+       
         
         max-width: rem(129);
 
@@ -118,7 +122,7 @@
 
 
     .planet-img {
-        position: relative;
+       
         
         max-width: rem(224);
 
@@ -147,7 +151,7 @@
 
 
     .planet-img {
-        position: relative;
+       
         
         max-width: rem(256);
 
@@ -176,7 +180,7 @@
 
 
     .planet-img {
-        position: relative;
+       
         
         max-width: rem(176);
 
@@ -205,7 +209,7 @@
 
 
     .planet-img {
-        position: relative;
+        
         
         max-width: rem(173);
 
