@@ -11,20 +11,21 @@
     display: flex;
     justify-content: space-between;
     gap: rem(10);
-
+    
     @include breakpoint-up('tiny') {
         border: none;
         flex-direction: column;
         min-width: rem(280);
     }
-
+    
     @include breakpoint-up('small') {
         min-width: rem(350);
     }
-
+    
 }
 
 .tap-btn {
+    margin-bottom: -4px;
     background: transparent;
     border: none;
     flex: 1;
