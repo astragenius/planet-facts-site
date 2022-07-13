@@ -83,7 +83,12 @@
 
         &:focus {
                 border-bottom: 4px solid hsl(var(--cl-earth) );
-                //background-color: hsl(var(--cl-earth) );
+
+                @include breakpoint-up('tiny') {
+                    
+                    border: none;
+                    background-color: hsl(var(--cl-earth) );
+                }
             
         }
     }

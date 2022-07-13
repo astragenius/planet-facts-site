@@ -33,7 +33,7 @@
     padding: 0;
     inset: 13% 0 0 0;
     display: flex;
-    height: 100vh;
+    height: 85vh;
     flex-direction: column;
     z-index: 100;
     background-color: hsl(var(--cl-dark));
@@ -64,6 +64,10 @@
     padding-inline: rem(24); 
     
     margin: 0;
+
+    @include breakpoint-up('tiny') {
+        display: block;
+    }
    
     
     a {
@@ -78,11 +82,15 @@
 
         &:hover {
             color: hsl(var(--cl-light));
+
+           
         }
 
         @include breakpoint-up('tiny') {
 
             font-size: rem(12);
+            display: inline-block;
+           
         }
 
     }

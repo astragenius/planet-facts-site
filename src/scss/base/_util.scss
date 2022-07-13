@@ -136,7 +136,9 @@
 
 
  .hover {
+   
     position: relative;
+    
  }
 
  .hover::after {
@@ -166,8 +168,7 @@
  .hover.venus::after {
     background-color: hsl(var(--cl-venus) );
  }
- .hover.earth::after,
- .hover.earth:focus {
+ .hover.earth::after{
     background-color: hsl(var(--cl-earth) );
  }
 
