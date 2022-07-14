@@ -3,6 +3,11 @@ import anime from 'animejs/lib/anime.es.js'
 import earth from './assets/images/planet-earth.svg'
 import earthGeo from './assets/images/geology-earth.png'
 import data from './assets/data/data.json'
+import { RenderPlanet } from './js/PlanetPage'
+
+let body = document.querySelector('[data-planet]').dataset.planet
+body = 'mercury'
+console.log(body)
 
 const open = document.querySelector('.nav-mobile-btn')
 const planetImg = document.querySelector('.planet-img')
@@ -10,6 +15,11 @@ const planetGeo = document.querySelector('.planet-geology')
 
 planetImg.src = earth
 planetGeo.src = earthGeo
+
+RenderPlanet.setPlanetFacts()
+RenderPlanet.setPlanetImgs()
+RenderPlanet.setPlanetGeo()
+
 function openAnimation() {
     anime({
         targets: '.nav-mobile-btn.open .line1',
