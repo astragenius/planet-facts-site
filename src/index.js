@@ -5,9 +5,15 @@ import earthGeo from './assets/images/geology-earth.png'
 import data from './assets/data/data.json'
 import { RenderPlanet } from './js/PlanetPage'
 
-let body = document.querySelector('[data-planet]').dataset.planet
-body = 'mercury'
-console.log(body)
+let position = data
+    .map((e) => {
+        return e.name
+    })
+    .indexOf('Earth')
+
+let planetData = data[position]
+let { name, overview, structure, geology } = planetData
+let { rotation, revolution, radius, temperature } = planetData
 
 const open = document.querySelector('.nav-mobile-btn')
 const planetImg = document.querySelector('.planet-img')
@@ -15,10 +21,6 @@ const planetGeo = document.querySelector('.planet-geology')
 
 planetImg.src = earth
 planetGeo.src = earthGeo
-
-RenderPlanet.setPlanetFacts()
-RenderPlanet.setPlanetImgs()
-RenderPlanet.setPlanetGeo()
 
 function openAnimation() {
     anime({
@@ -60,7 +62,6 @@ function closeAnimation() {
 }
 
 open.addEventListener('click', () => {
-    console.log(open.classList.contains('open'))
     if (open.classList.contains('open') === true) {
         open.classList.toggle('open')
         closeAnimation()
