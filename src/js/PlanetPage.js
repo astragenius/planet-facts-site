@@ -12,61 +12,88 @@ import earthImg from '../assets/images/planet-earth.svg'
 import earthInternal from '../assets/images/planet-earth-internal.svg'
 import earthGeo from '../assets/images/geology-earth.png'
 
-// renderPlanet Function
-// renderPlanet Function get a parameter - the planet name
-// set variables of each DOM element that i need to place the content.
-// get needed data from data.json and store it in a variable.
-// find it with a ES6 function that finde the name of the planet and extract the needed data for the content.
-// set extractet data to the variables
+import marsImg from '../assets/images/planet-mars.svg'
+import marsInternal from '../assets/images/planet-mars-internal.svg'
+import marsGeo from '../assets/images/geology-mars.png'
 
-//(maybe i need to create a function to find the needed Planet data when no ES6 function is usefull)
-// The DOM element thas was createt get returnt
+import jupiterImg from '../assets/images/planet-jupiter.svg'
+import jupiterInternal from '../assets/images/planet-jupiter-internal.svg'
+import jupiterGeo from '../assets/images/geology-jupiter.png'
 
+import saturnImg from '../assets/images/planet-saturn.svg'
+import saturnInternal from '../assets/images/planet-saturn-internal.svg'
+import saturnGeo from '../assets/images/geology-saturn.png'
+
+import uranusImg from '../assets/images/planet-uranus.svg'
+import uranusInternal from '../assets/images/planet-uranus-internal.svg'
+import uranusGeo from '../assets/images/geology-uranus.png'
+
+import neptuneImg from '../assets/images/planet-neptune.svg'
+import neptuneInternal from '../assets/images/planet-neptune-internal.svg'
+import neptuneGeo from '../assets/images/geology-neptune.png'
+
+let planetData = data[0]
 export const RenderPlanet = (() => {
-    /* planet imgs */
+    const planetFactsContainer = document.getElementById('planet-facts-section')
+    const { name, overview, structure, geology } = planetData
 
-    const setPlanetImgs = () => {
-        const planetImg = document.querySelector('.planet-img')
-        planetImg.src = mercuryImg
+    function setState(planet) {
+        let planetPosition = data
+            .map((e) => {
+                return e.name
+            })
+            .indexOf(planet)
+
+        planetData = data[planetPosition]
     }
-    const setPlanetIntertnal = () => {
-        const planetInternal = document.querySelector('.planet-img')
-        planetInternal.src = mercuryInternal
+    function planetFactsContent() {
+        const { rotation, revolution, radius, temperature } = planetData
+        const rotationFact = planetFactsContainer.querySelector('.rotation-js')
+        const revolutionFact =
+            planetFactsContainer.querySelector('.rotation-js')
+        const radiusFact = planetFactsContainer.querySelector('.radius-js')
+        const temperatureFact =
+            planetFactsContainer.querySelector('.temperature-js')
+
+        rotationFact.textContent = rotation
+        revolutionFact.textContent = revolution
+        radiusFact.textContent = radius
+        temperatureFact.textContent = temperature
     }
-    const setPlanetGeo = () => {
+
+    function taps() {
+        const planetImages = planetData.images
+        const overviewImage = planetImages.planet
+        const taps = document.getElementById('taps-section')
+        const overview = taps.querySelector('[data-tap=overview')
+        const internal = taps.querySelector('[data-tap=internal')
+        const geology = taps.querySelector('[data-tap=geology')
         const planetGeology = document.querySelector('.planet-geology')
-        planetGeology.src = mercuryGeo
+        const overviewPlanet = document.querySelector('.planet-img')
+        overviewPlanet.src = overviewImage
+
+        overview.addEventListener('click', () => {
+            planetGeology.src = ''
+            const overviewImage = planetImages.planet
+            const overviewPlanet = document.querySelector('.planet-img')
+            overviewPlanet.src = overviewImage
+        })
+        internal.addEventListener('click', () => {
+            planetGeology.src = ''
+            const image = planetImages.internal
+            const planet = document.querySelector('.planet-img')
+            planet.src = image
+        })
+        geology.addEventListener('click', () => {
+            const image = planetImages.geology
+            planetGeology.src = image
+        })
     }
 
-    /* planet content */
-    const planetContent = document.getElementById('planet-content')
-    const planetName = planetContent.getElementsByTagName('h2')
-    const planetDescription = planetContent.getElementsByTagName('p')
-    const wikiLink = planetContent.querySelector('.wiki-js')
-
-    /* taps */
-
-    const planetTaps = document.getElementById('taps-section')
-
-    /* Planet Facts */
-    const setPlanetFacts = () => {
-        const planetFactsContainer = document.getElementById(
-            'planet-facts-section'
-        )
-        const rotationTime = planetFactsContainer.querySelector('.rotation-js')
-        const revolutionTime =
-            planetFactsContainer.querySelector('.revolution-js')
-        const radius = planetFactsContainer.querySelector('.radius-js')
-        const averageTemp =
-            planetFactsContainer.querySelector('.averageTemp-js')
-
-        console.log(averageTemp)
-
-        rotationTime.textContent = data[0].rotation
-        revolutionTime.textContent = data[0].revolution
-        radius.textContent = data[0].radius
-        averageTemp.textContent = data[0].temperature
+    function planet() {
+        taps()
+        planetFactsContent()
     }
 
-    return { setPlanetFacts, setPlanetImgs, setPlanetGeo }
+    return { planet, setState }
 })()

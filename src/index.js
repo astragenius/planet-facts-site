@@ -1,26 +1,51 @@
 import './scss/index.scss'
 import anime from 'animejs/lib/anime.es.js'
-import earth from './assets/images/planet-earth.svg'
-import earthGeo from './assets/images/geology-earth.png'
+
 import data from './assets/data/data.json'
 import { RenderPlanet } from './js/PlanetPage'
 
-let position = data
-    .map((e) => {
-        return e.name
-    })
-    .indexOf('Earth')
-
-let planetData = data[position]
-let { name, overview, structure, geology } = planetData
-let { rotation, revolution, radius, temperature } = planetData
-
 const open = document.querySelector('.nav-mobile-btn')
-const planetImg = document.querySelector('.planet-img')
-const planetGeo = document.querySelector('.planet-geology')
 
-planetImg.src = earth
-planetGeo.src = earthGeo
+const mercury = document.querySelector('.mercury')
+const venus = document.querySelector('.venus')
+const earth = document.querySelector('.earth')
+const mars = document.querySelector('.mars')
+const jupiter = document.querySelector('.jupiter')
+const saturn = document.querySelector('.saturn')
+const uranus = document.querySelector('.uranus')
+const neptune = document.querySelector('.neptune')
+mercury.addEventListener('click', () => {
+    RenderPlanet.setState('Mercury')
+    RenderPlanet.planet()
+})
+venus.addEventListener('click', () => {
+    RenderPlanet.setState('Venus')
+    RenderPlanet.planet()
+})
+earth.addEventListener('click', () => {
+    RenderPlanet.setState('Earth')
+    RenderPlanet.planet()
+})
+mars.addEventListener('click', () => {
+    RenderPlanet.setState('Mars')
+    RenderPlanet.planet()
+})
+jupiter.addEventListener('click', () => {
+    RenderPlanet.setState('Jupiter')
+    RenderPlanet.planet()
+})
+saturn.addEventListener('click', () => {
+    RenderPlanet.setState('Saturn')
+    RenderPlanet.planet()
+})
+uranus.addEventListener('click', () => {
+    RenderPlanet.setState('Uranus')
+    RenderPlanet.planet()
+})
+neptune.addEventListener('click', () => {
+    RenderPlanet.setState('Neptune')
+    RenderPlanet.planet()
+})
 
 function openAnimation() {
     anime({
