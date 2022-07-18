@@ -34,7 +34,6 @@ import neptuneGeo from '../assets/images/geology-neptune.png'
 
 let planetData = data[0]
 const setPlanetContent = function () {
-    const { name, overview, structure, geology } = planetData
     const planetContentContainer = document.getElementById('planet-content')
     const h2 = planetContentContainer.querySelector('h2')
     const p = planetContentContainer.querySelector('p')
@@ -43,9 +42,6 @@ const setPlanetContent = function () {
     function getName() {
         const name = planetData.name
         h2.textContent = name
-
-        console.log(h2)
-        console.log(name)
     }
     function getOverview() {
         const overview = planetData.overview
@@ -84,7 +80,7 @@ export const RenderPlanet = (() => {
         const { rotation, revolution, radius, temperature } = planetData
         const rotationFact = planetFactsContainer.querySelector('.rotation-js')
         const revolutionFact =
-            planetFactsContainer.querySelector('.rotation-js')
+            planetFactsContainer.querySelector('.revolution-js')
         const radiusFact = planetFactsContainer.querySelector('.radius-js')
         const temperatureFact =
             planetFactsContainer.querySelector('.temperature-js')
@@ -108,14 +104,14 @@ export const RenderPlanet = (() => {
         setContent.getName()
 
         overview.addEventListener('click', () => {
-            //planetGeology.src = ''
+            planetGeology.src = ''
             const overviewImage = planetImages.planet
             const overviewPlanet = document.querySelector('.planet-img')
             overviewPlanet.src = overviewImage
             setContent.getOverview()
         })
         internal.addEventListener('click', () => {
-            //planetGeology.src = ''
+            planetGeology.src = ''
             const image = planetImages.internal
             const planet = document.querySelector('.planet-img')
             planet.src = image
@@ -130,7 +126,7 @@ export const RenderPlanet = (() => {
 
     function planet() {
         taps()
-
+        setContent.getOverview()
         planetFactsContent()
     }
 
