@@ -5,7 +5,6 @@ import data from './assets/data/data.json'
 import { RenderPlanet } from './js/PlanetPage'
 
 const open = document.querySelector('.nav-mobile-btn')
-
 const mercury = document.querySelector('.mercury')
 const venus = document.querySelector('.venus')
 const earth = document.querySelector('.earth')

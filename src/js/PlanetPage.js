@@ -33,9 +33,43 @@ import neptuneInternal from '../assets/images/planet-neptune-internal.svg'
 import neptuneGeo from '../assets/images/geology-neptune.png'
 
 let planetData = data[0]
+const setPlanetContent = function () {
+    const { name, overview, structure, geology } = planetData
+    const planetContentContainer = document.getElementById('planet-content')
+    const h2 = planetContentContainer.querySelector('h2')
+    const p = planetContentContainer.querySelector('p')
+    const wikiLink = planetContentContainer.querySelector('.wiki-js')
+
+    function getName() {
+        const name = planetData.name
+        h2.textContent = name
+
+        console.log(h2)
+        console.log(name)
+    }
+    function getOverview() {
+        const overview = planetData.overview
+        p.textContent = overview.content
+        wikiLink.src = overview.source
+    }
+
+    function getStructure() {
+        const structure = planetData.structure
+        p.textContent = structure.content
+        wikiLink.src = structure.source
+    }
+
+    function getGeology() {
+        const geology = planetData.geology
+        p.textContent = geology.content
+        wikiLink.src = geology.source
+    }
+
+    return { getName, getOverview, getStructure, getGeology }
+}
 export const RenderPlanet = (() => {
     const planetFactsContainer = document.getElementById('planet-facts-section')
-    const { name, overview, structure, geology } = planetData
+    const setContent = setPlanetContent()
 
     function setState(planet) {
         let planetPosition = data
@@ -71,27 +105,32 @@ export const RenderPlanet = (() => {
         const planetGeology = document.querySelector('.planet-geology')
         const overviewPlanet = document.querySelector('.planet-img')
         overviewPlanet.src = overviewImage
+        setContent.getName()
 
         overview.addEventListener('click', () => {
-            planetGeology.src = ''
+            //planetGeology.src = ''
             const overviewImage = planetImages.planet
             const overviewPlanet = document.querySelector('.planet-img')
             overviewPlanet.src = overviewImage
+            setContent.getOverview()
         })
         internal.addEventListener('click', () => {
-            planetGeology.src = ''
+            //planetGeology.src = ''
             const image = planetImages.internal
             const planet = document.querySelector('.planet-img')
             planet.src = image
+            setContent.getStructure()
         })
         geology.addEventListener('click', () => {
             const image = planetImages.geology
             planetGeology.src = image
+            setContent.getGeology()
         })
     }
 
     function planet() {
         taps()
+
         planetFactsContent()
     }
 
