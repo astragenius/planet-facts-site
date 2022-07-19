@@ -5,6 +5,8 @@ import data from './assets/data/data.json'
 import { RenderPlanet } from './js/PlanetPage'
 
 const open = document.querySelector('.nav-mobile-btn')
+const mainNav = document.querySelector('.main-navigation')
+
 const mercury = document.querySelector('.mercury')
 const venus = document.querySelector('.venus')
 const earth = document.querySelector('.earth')
@@ -13,6 +15,7 @@ const jupiter = document.querySelector('.jupiter')
 const saturn = document.querySelector('.saturn')
 const uranus = document.querySelector('.uranus')
 const neptune = document.querySelector('.neptune')
+
 mercury.addEventListener('click', () => {
     RenderPlanet.setState('Mercury')
     RenderPlanet.planet()
@@ -94,12 +97,12 @@ function closeAnimation() {
 }
 
 open.addEventListener('click', () => {
-    if (open.classList.contains('open') === true) {
-        open.classList.toggle('open')
-        closeAnimation()
-    } else {
-        console.log('test1')
-        open.classList.add('open')
+    let navAttribute = mainNav.getAttribute('aria-expanded')
+    if (navAttribute == 'false') {
+        mainNav.setAttribute('aria-expanded', true)
         openAnimation()
+    } else {
+        mainNav.setAttribute('aria-expanded', false)
+        closeAnimation()
     }
 })

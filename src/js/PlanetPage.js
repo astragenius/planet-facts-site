@@ -79,7 +79,6 @@ export const RenderPlanet = (() => {
     function setPlanetSize(newPlanet) {
         const dataPlanet = document.querySelector('[data-planet]')
         dataPlanet.dataset.planet = newPlanet
-        console.log(dataPlanet.dataset.planet)
     }
     function planetFactsContent() {
         const { rotation, revolution, radius, temperature } = planetData
