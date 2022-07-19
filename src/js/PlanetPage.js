@@ -104,15 +104,18 @@ export const RenderPlanet = (() => {
         const geology = taps.querySelector('[data-tap=geology')
         const planetGeology = document.querySelector('.planet-geology')
         const overviewPlanet = document.querySelector('.planet-img')
+        const wikiLink = document.querySelector('.wiki-js')
         overviewPlanet.src = overviewImage
         planetGeology.src = ''
         setContent.getName()
+        console.log(wikiLink.href)
 
         overview.addEventListener('click', () => {
             planetGeology.src = ''
             const overviewImage = planetImages.planet
             const overviewPlanet = document.querySelector('.planet-img')
             overviewPlanet.src = overviewImage
+            wikiLink.href = planetData.overview.source
             setContent.getOverview()
         })
         internal.addEventListener('click', () => {
@@ -120,11 +123,13 @@ export const RenderPlanet = (() => {
             const image = planetImages.internal
             const planet = document.querySelector('.planet-img')
             planet.src = image
+            wikiLink.href = planetData.structure.source
             setContent.getStructure()
         })
         geology.addEventListener('click', () => {
             const image = planetImages.geology
             planetGeology.src = image
+            wikiLink.href = planetData.geology.source
             setContent.getGeology()
         })
     }
