@@ -16,34 +16,42 @@ const neptune = document.querySelector('.neptune')
 mercury.addEventListener('click', () => {
     RenderPlanet.setState('Mercury')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('mercury')
 })
 venus.addEventListener('click', () => {
     RenderPlanet.setState('Venus')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('venus')
 })
 earth.addEventListener('click', () => {
     RenderPlanet.setState('Earth')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('earth')
 })
 mars.addEventListener('click', () => {
     RenderPlanet.setState('Mars')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('mars')
 })
 jupiter.addEventListener('click', () => {
     RenderPlanet.setState('Jupiter')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('jupiter')
 })
 saturn.addEventListener('click', () => {
     RenderPlanet.setState('Saturn')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('saturn')
 })
 uranus.addEventListener('click', () => {
     RenderPlanet.setState('Uranus')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('uranus')
 })
 neptune.addEventListener('click', () => {
     RenderPlanet.setState('Neptune')
     RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('neptune')
 })
 
 function openAnimation() {

@@ -76,6 +76,11 @@ export const RenderPlanet = (() => {
 
         planetData = data[planetPosition]
     }
+    function setPlanetSize(newPlanet) {
+        const dataPlanet = document.querySelector('[data-planet]')
+        dataPlanet.dataset.planet = newPlanet
+        console.log(dataPlanet.dataset.planet)
+    }
     function planetFactsContent() {
         const { rotation, revolution, radius, temperature } = planetData
         const rotationFact = planetFactsContainer.querySelector('.rotation-js')
@@ -101,6 +106,7 @@ export const RenderPlanet = (() => {
         const planetGeology = document.querySelector('.planet-geology')
         const overviewPlanet = document.querySelector('.planet-img')
         overviewPlanet.src = overviewImage
+        planetGeology.src = ''
         setContent.getName()
 
         overview.addEventListener('click', () => {
@@ -130,5 +136,5 @@ export const RenderPlanet = (() => {
         planetFactsContent()
     }
 
-    return { planet, setState }
+    return { planet, setState, setPlanetSize }
 })()
