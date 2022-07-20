@@ -34,7 +34,12 @@
 
 
         &:focus {
-                background-color: hsl(var(--cl-mercury) );
+                border-bottom: 4px solid hsl(var(--cl-mercury) );
+
+                @include breakpoint-up('tiny') {
+                    border: none;
+                    background-color: hsl(var(--cl-mercury) );
+                }
             
         }
     }
