@@ -106,6 +106,7 @@ export const RenderPlanet = (() => {
         const overviewPlanet = document.querySelector('.planet-img')
         const wikiLink = document.querySelector('.wiki-js')
         overviewPlanet.src = overviewImage
+        wikiLink.href = planetData.overview.source
         planetGeology.src = ''
         setContent.getName()
         console.log(wikiLink.href)

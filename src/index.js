@@ -1,5 +1,5 @@
 import './scss/index.scss'
-import anime from 'animejs/lib/anime.es.js'
+import anime from 'animejs/lib/anime.es'
 
 import data from './assets/data/data.json'
 import { RenderPlanet } from './js/PlanetPage'
@@ -59,18 +59,18 @@ neptune.addEventListener('click', () => {
 
 function openAnimation() {
     anime({
-        targets: '.nav-mobile-btn.open .line1',
+        targets: '.nav-mobile-btn .line1',
         rotate: '45deg',
         translateY: '4px',
         margin: '0px',
     })
     anime({
-        targets: '.nav-mobile-btn.open .line2',
+        targets: '.nav-mobile-btn .line2',
         opacity: 0,
         margin: '0px',
     })
     anime({
-        targets: '.nav-mobile-btn.open .line3',
+        targets: '.nav-mobile-btn .line3',
         rotate: '-45deg',
         translateY: '-5px',
         margin: '0px',
@@ -105,4 +105,17 @@ open.addEventListener('click', () => {
         mainNav.setAttribute('aria-expanded', false)
         closeAnimation()
     }
+})
+
+/* anime({
+    targets: '.nav-mobile-btn.open .line1',
+    rotate: '45deg',
+    translateY: '4px',
+    margin: '0px',
+})
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    RenderPlanet.planet()
+    RenderPlanet.setPlanetSize('mercury')
 })
