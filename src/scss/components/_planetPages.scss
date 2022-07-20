@@ -15,6 +15,18 @@
         }
        
     }
+
+    .planet-geology {
+
+        top: 65%;
+        left: 15%;
+
+        @include breakpoint-up('tiny') {
+
+            top: 80%;
+            left: 20%;
+        }
+    }
     
 
 
@@ -44,7 +56,17 @@
         }
        
     }
-    
+    .planet-geology {
+
+        top: 65%;
+        left: 20%;
+
+        @include breakpoint-up('tiny') {
+
+            top: 70%;
+            left: 27%;
+        }
+    }
 
 
     .taps-container > button  {
