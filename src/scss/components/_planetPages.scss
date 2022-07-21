@@ -78,8 +78,12 @@
 
 
         &:focus {
-                background-color: hsl(var(--cl-venus) );
-            
+                border-bottom: 4px solid hsl(var(--cl-venus) );
+
+                @include breakpoint-up('tiny') {
+                    border: none;
+                    background-color: hsl(var(--cl-venus) );
+                }
         }
     }
 }
@@ -137,6 +141,18 @@
         }
        
     }
+
+    .planet-geology {
+
+        top: 65%;
+        left: 20%;
+
+        @include breakpoint-up('tiny') {
+
+            top: 70%;
+            left: 27%;
+        }
+    }
     
 
 
@@ -144,8 +160,13 @@
 
 
         &:focus {
-                background-color: hsl(var(--cl-mars) );
-            
+                border-bottom: 4px solid hsl(var(--cl-mars) );
+
+                @include breakpoint-up('tiny') {
+
+                    border: none;
+                    background-color: hsl(var(--cl-mars));
+                }
         }
     }
 }
@@ -166,6 +187,18 @@
         }
        
     }
+
+    .planet-geology {
+
+        top: 65%;
+        left: 30%;
+
+        @include breakpoint-up('tiny') {
+
+            top: 70%;
+            left: 35%;
+        }
+    }
     
 
 
@@ -173,9 +206,12 @@
 
 
         &:focus {
-                background-color: hsl(var(--cl-jupiter) );
-            
-        }
+                border-bottom: 4px solid hsl(var(--cl-jupiter) );
+                @include breakpoint-up('tiny') {
+                    border: none;
+                    background-color: hsl(var(--cl-jupiter) );
+                }
+        }   
     }
 }
 [data-planet="saturn"] {
@@ -195,6 +231,18 @@
         }
        
     }
+
+    .planet-geology {
+
+        top: 65%;
+        left: 33%;
+
+        @include breakpoint-up('tiny') {
+
+            top: 60%;
+            left: 35%;
+        }
+    }
     
 
 
@@ -202,7 +250,11 @@
 
 
         &:focus {
+            border-bottom: 4px solid hsl(var(--cl-saturn) );
+            @include breakpoint-up('tiny') {
+                border: none;
                 background-color: hsl(var(--cl-saturn) );
+            }
             
         }
     }
@@ -224,6 +276,18 @@
         }
        
     }
+
+    .planet-geology {
+
+        top: 65%;
+        left: 24%;
+
+        @include breakpoint-up('tiny') {
+
+            top: 65%;
+            left: 30%;
+        }
+    }
     
 
 
@@ -231,7 +295,11 @@
 
 
         &:focus {
+            border-bottom: 4px solid hsl(var(--cl-uranus) );
+            @include breakpoint-up('tiny') {
+                border: none;
                 background-color: hsl(var(--cl-uranus) );
+            }
             
         }
     }
@@ -253,6 +321,18 @@
         }
        
     }
+
+    .planet-geology {
+
+        top: 65%;
+        left: 25%;
+
+        @include breakpoint-up('tiny') {
+
+            top: 65%;
+            left: 30%;
+        }
+    }
     
 
 
@@ -260,7 +340,11 @@
 
 
         &:focus {
+            border-bottom: 4px solid hsl(var(--cl-neptune) );
+            @include breakpoint-up('tiny') {
+                border: none;
                 background-color: hsl(var(--cl-neptune) );
+            }
             
         }
     }
