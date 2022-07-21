@@ -21,6 +21,10 @@ header {
     padding-top: rem(16);
     padding-bottom: rem(16);
 
+    h1 {
+        width: 100%;
+    }
+
     @include breakpoint-up('tiny') {
 
         flex-direction: column;
