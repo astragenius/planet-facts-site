@@ -80,17 +80,17 @@
         font-size: rem(20);
         font-weight: 700;
 
-        &:hover {
-            color: hsl(var(--cl-light));
-
-           
-        }
-
+        
         @include breakpoint-up('tiny') {
-
+            
             font-size: rem(12);
             display: inline-block;
-           
+            
+            &:hover {
+                color: hsl(var(--cl-light));
+    
+               
+            }
         }
 
     }
