@@ -28,6 +28,10 @@ header {
     @include breakpoint-up('tiny') {
 
         flex-direction: column;
+
+        h1 {
+            width: auto;
+        }
     }
 
     @include breakpoint-up('small') {

@@ -30,14 +30,13 @@
     
 
 
-    .taps-container > button  {
+    .taps-container > .tap-btn  {
 
 
         &:focus {
-                border-bottom: 4px solid hsl(var(--cl-mercury) );
-
+                box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-mercury) );
                 @include breakpoint-up('tiny') {
-                    border: none;
+                    box-shadow: none;
                     background-color: hsl(var(--cl-mercury) );
                 }
             
@@ -78,12 +77,11 @@
 
 
         &:focus {
-                border-bottom: 4px solid hsl(var(--cl-venus) );
-
-                @include breakpoint-up('tiny') {
-                    border: none;
-                    background-color: hsl(var(--cl-venus) );
-                }
+            box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-venus) );
+            @include breakpoint-up('tiny') {
+                box-shadow: none;
+                background-color: hsl(var(--cl-venus) );
+            }
         }
     }
 }
@@ -113,11 +111,11 @@
 
 
         &:focus {
-                border-bottom: 4px solid hsl(var(--cl-earth) );
+                
 
+                box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-earth) );
                 @include breakpoint-up('tiny') {
-                    
-                    border: none;
+                    box-shadow: none;
                     background-color: hsl(var(--cl-earth) );
                 }
             
@@ -160,12 +158,12 @@
 
 
         &:focus {
-                border-bottom: 4px solid hsl(var(--cl-mars) );
+             
 
+                box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-mars) );
                 @include breakpoint-up('tiny') {
-
-                    border: none;
-                    background-color: hsl(var(--cl-mars));
+                    box-shadow: none;
+                    background-color: hsl(var(--cl-mars) );
                 }
         }
     }
@@ -206,11 +204,11 @@
 
 
         &:focus {
-                border-bottom: 4px solid hsl(var(--cl-jupiter) );
-                @include breakpoint-up('tiny') {
-                    border: none;
-                    background-color: hsl(var(--cl-jupiter) );
-                }
+            box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-jupiter) );
+            @include breakpoint-up('tiny') {
+                box-shadow: none;
+                background-color: hsl(var(--cl-jupiter) );
+            }
         }   
     }
 }
@@ -250,11 +248,11 @@
 
 
         &:focus {
-            border-bottom: 4px solid hsl(var(--cl-saturn) );
-            @include breakpoint-up('tiny') {
-                border: none;
-                background-color: hsl(var(--cl-saturn) );
-            }
+            box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-saturn) );
+                @include breakpoint-up('tiny') {
+                    box-shadow: none;
+                    background-color: hsl(var(--cl-saturn) );
+                }
             
         }
     }
@@ -295,9 +293,9 @@
 
 
         &:focus {
-            border-bottom: 4px solid hsl(var(--cl-uranus) );
+            box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-uranus) );
             @include breakpoint-up('tiny') {
-                border: none;
+                box-shadow: none;
                 background-color: hsl(var(--cl-uranus) );
             }
             
@@ -340,11 +338,11 @@
 
 
         &:focus {
-            border-bottom: 4px solid hsl(var(--cl-neptune) );
-            @include breakpoint-up('tiny') {
-                border: none;
-                background-color: hsl(var(--cl-neptune) );
-            }
+                box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-neptune) );
+                @include breakpoint-up('tiny') {
+                    box-shadow: none;
+                    background-color: hsl(var(--cl-neptune) );
+                }
             
         }
     }

@@ -1,9 +1,5 @@
 /* TAPS (BUTTONS) Mobile First */
-.taps {
 
-  
-    
-}
 
 
 .taps-container {
@@ -25,20 +21,21 @@
 }
 
 .tap-btn {
-    margin-bottom: -4px;
+    
     background: transparent;
     border: none;
     flex: 1;
     padding: rem(20) rem(0);
     cursor: pointer;
     transition: 300ms ease-in-out;
+    
 
     &:hover {
         background-color: hsl(var(--cl-light-grey) / 0.4);
         border-color: transparent;
     }
 
-    
+   
 
     @include breakpoint-up('tiny') {
         border: 1px solid hsl(var(--cl-light) / 0.2);
@@ -67,7 +64,7 @@
 }
 
 .taps-border {
-    border: 1px solid hsl(var(--cl-light) / 0.2);
+    border: 0.5px solid hsl(var(--cl-light) / 0.2);
     margin-top: 0;
     margin-bottom: 0;
     padding:0;

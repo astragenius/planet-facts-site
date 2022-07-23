@@ -20,41 +20,49 @@ mercury.addEventListener('click', () => {
     RenderPlanet.setState('Mercury')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('mercury')
+    toggleNavMenu()
 })
 venus.addEventListener('click', () => {
     RenderPlanet.setState('Venus')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('venus')
+    toggleNavMenu()
 })
 earth.addEventListener('click', () => {
     RenderPlanet.setState('Earth')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('earth')
+    toggleNavMenu()
 })
 mars.addEventListener('click', () => {
     RenderPlanet.setState('Mars')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('mars')
+    toggleNavMenu()
 })
 jupiter.addEventListener('click', () => {
     RenderPlanet.setState('Jupiter')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('jupiter')
+    toggleNavMenu()
 })
 saturn.addEventListener('click', () => {
     RenderPlanet.setState('Saturn')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('saturn')
+    toggleNavMenu()
 })
 uranus.addEventListener('click', () => {
     RenderPlanet.setState('Uranus')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('uranus')
+    toggleNavMenu()
 })
 neptune.addEventListener('click', () => {
     RenderPlanet.setState('Neptune')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('neptune')
+    toggleNavMenu()
 })
 
 function openAnimation() {
@@ -96,7 +104,7 @@ function closeAnimation() {
     })
 }
 
-open.addEventListener('click', () => {
+function toggleNavMenu() {
     let navAttribute = mainNav.getAttribute('aria-expanded')
     const body = document.querySelector('body')
 
@@ -109,15 +117,9 @@ open.addEventListener('click', () => {
         body.classList.toggle('no-scroll')
         closeAnimation()
     }
-})
+}
 
-/* anime({
-    targets: '.nav-mobile-btn.open .line1',
-    rotate: '45deg',
-    translateY: '4px',
-    margin: '0px',
-})
- */
+open.addEventListener('click', toggleNavMenu)
 
 document.addEventListener('DOMContentLoaded', () => {
     RenderPlanet.planet()
