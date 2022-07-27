@@ -31,6 +31,7 @@ import uranusGeo from '../assets/images/geology-uranus.png'
 import neptuneImg from '../assets/images/planet-neptune.svg'
 import neptuneInternal from '../assets/images/planet-neptune-internal.svg'
 import neptuneGeo from '../assets/images/geology-neptune.png'
+import { planetTransition, planetNameTransition } from './Animation'
 
 let planetData = data[0]
 const setPlanetContent = function () {
@@ -42,6 +43,7 @@ const setPlanetContent = function () {
     function getName() {
         const name = planetData.name
         h2.textContent = name
+        planetNameTransition()
     }
     function getOverview() {
         const overview = planetData.overview
@@ -107,21 +109,23 @@ export const RenderPlanet = (() => {
         const wikiLink = document.querySelector('.wiki-js')
         overviewPlanet.src = overviewImage
         wikiLink.href = planetData.overview.source
-        planetGeology.src = ''
+        planetGeology.src = '#'
         setContent.getName()
 
         overview.addEventListener('click', () => {
-            planetGeology.src = ''
+            planetGeology.src = '#'
             const overviewImage = planetImages.planet
             const overviewPlanet = document.querySelector('.planet-img')
+            planetTransition()
             overviewPlanet.src = overviewImage
             wikiLink.href = planetData.overview.source
             setContent.getOverview()
         })
         internal.addEventListener('click', () => {
-            planetGeology.src = ''
+            planetGeology.src = '#'
             const image = planetImages.internal
             const planet = document.querySelector('.planet-img')
+            planetTransition()
             planet.src = image
             wikiLink.href = planetData.structure.source
             setContent.getStructure()

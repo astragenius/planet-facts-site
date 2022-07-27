@@ -1,6 +1,7 @@
 import './scss/index.scss'
 import { toggleNavMenu } from './js/MobileNav'
 import { RenderPlanet } from './js/PlanetPage'
+import { planetTransition } from './js/Animation'
 
 const open = document.querySelector('.nav-mobile-btn')
 
@@ -23,6 +24,7 @@ venus.addEventListener('click', () => {
     RenderPlanet.setState('Venus')
     RenderPlanet.planet()
     RenderPlanet.setPlanetSize('venus')
+    planetTransition()
     toggleNavMenu()
 })
 earth.addEventListener('click', () => {

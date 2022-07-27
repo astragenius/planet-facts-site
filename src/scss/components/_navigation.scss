@@ -2,11 +2,7 @@
 
  //Mobile Navigation
 
-[aria-expanded='false'] {
-    
-   display: none;
-    
-}
+
 
 
 .main-navigation {
@@ -17,7 +13,7 @@
         
         display: block;
         
-        
+
     }
     
     @include breakpoint-up('small') {

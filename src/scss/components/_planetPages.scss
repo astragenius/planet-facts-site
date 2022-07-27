@@ -1,7 +1,8 @@
 [data-planet="mercury"] {
 
 
-    .planet-img {
+    .planet-img,
+    .planet-structure {
         
         
         max-width: rem(111);
@@ -20,6 +21,7 @@
 
         top: 65%;
         left: 15%;
+        
 
         @include breakpoint-up('tiny') {
 
@@ -50,7 +52,7 @@
       
         
         max-width: rem(154);
-
+      
         @include breakpoint-up('tiny') {
 
             max-width: rem(253);

@@ -1,0 +1,21 @@
+
+
+.main-navigation-items-mobile {
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    @include breakpoint-up('tiny') {
+
+        transform: translate(0%, 0);  
+
+    }
+}
+
+.main-navigation-item-mobile {
+    transition-delay: 2s;
+}
+
+[aria-expanded="true"] .main-navigation-items-mobile {
+    transform: none;
+}

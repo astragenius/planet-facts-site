@@ -9,7 +9,10 @@
 
 .planet-img-container {
     position: relative;
+}
 
+.planet-img {
+    
 }
 
 
@@ -31,7 +34,7 @@
 
 .planet-text {
     text-align: center;
-
+  
     @include breakpoint-up('tiny') {
         text-align: left;
         max-width: 45ch;
