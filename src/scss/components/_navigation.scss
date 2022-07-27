@@ -3,21 +3,23 @@
  //Mobile Navigation
 
 [aria-expanded='false'] {
-    display: none;
+    
+   display: none;
     
 }
 
- .main-navigation {
-    position: relative;
+
+.main-navigation {
     width: 100%;
-
+    z-index: 100;
+    
     @include breakpoint-up('tiny') {
-
+        
         display: block;
         
         
     }
-
+    
     @include breakpoint-up('small') {
         width: 50%;
     }
@@ -28,13 +30,14 @@
 
 .main-navigation-items {
     position: fixed;
+
+
     color: hsl(var(--cl-light) );
     padding: 0;
-    inset: 10% 0 0 0;
+    inset: 8% 0 0 0;
     display: flex;
     height: 90vh;
     flex-direction: column;
-    z-index: 100;
     background-color: hsl(var(--cl-dark));
 
     
@@ -61,7 +64,7 @@
     justify-content: space-between;
     cursor: pointer;
     padding-inline: rem(24); 
-    
+
     margin: 0;
 
     @include breakpoint-up('tiny') {

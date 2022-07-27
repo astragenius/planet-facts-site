@@ -1,11 +1,8 @@
 import './scss/index.scss'
-import anime from 'animejs/lib/anime.es'
-
-import data from './assets/data/data.json'
+import { toggleNavMenu } from './js/MobileNav'
 import { RenderPlanet } from './js/PlanetPage'
 
 const open = document.querySelector('.nav-mobile-btn')
-const mainNav = document.querySelector('.main-navigation')
 
 const mercury = document.querySelector('.mercury')
 const venus = document.querySelector('.venus')
@@ -64,60 +61,6 @@ neptune.addEventListener('click', () => {
     RenderPlanet.setPlanetSize('neptune')
     toggleNavMenu()
 })
-
-function openAnimation() {
-    anime({
-        targets: '.nav-mobile-btn .line1',
-        rotate: '45deg',
-        translateY: '4px',
-        margin: '0px',
-    })
-    anime({
-        targets: '.nav-mobile-btn .line2',
-        opacity: 0,
-        margin: '0px',
-    })
-    anime({
-        targets: '.nav-mobile-btn .line3',
-        rotate: '-45deg',
-        translateY: '-5px',
-        margin: '0px',
-    })
-}
-function closeAnimation() {
-    anime({
-        targets: '.nav-mobile-btn .line1',
-        rotate: '0deg',
-        translateY: '0px',
-        marginTop: '5px',
-    })
-    anime({
-        targets: '.nav-mobile-btn .line2',
-        opacity: 1,
-        marginTop: '5px',
-    })
-    anime({
-        targets: '.nav-mobile-btn .line3',
-        rotate: '0deg',
-        translateY: '0px',
-        marginTop: '5px',
-    })
-}
-
-function toggleNavMenu() {
-    let navAttribute = mainNav.getAttribute('aria-expanded')
-    const body = document.querySelector('body')
-
-    if (navAttribute == 'false') {
-        mainNav.setAttribute('aria-expanded', true)
-        body.classList.toggle('no-scroll')
-        openAnimation()
-    } else {
-        mainNav.setAttribute('aria-expanded', false)
-        body.classList.toggle('no-scroll')
-        closeAnimation()
-    }
-}
 
 open.addEventListener('click', toggleNavMenu)
 
