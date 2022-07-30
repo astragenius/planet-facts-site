@@ -24,7 +24,7 @@
     <img src="/DOC/imgs/logo-desktop.svg" alt="Logo" width="500" height="80">
   </a>
 
-<h3 align="center">Planet Facts Site</h3>
+<h2 align="center">Planet Facts Site</h2>
 
   <p align="center">
     <a href="https://www.frontendmentor.io/challenges?difficulties=3"><img src="https://img.shields.io/badge/Difficulty-Intermediate-C99703?style=for-the-badge&logo=frontendmentor" alt="Difficulty - Intermediate"></a>
