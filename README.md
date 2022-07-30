@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Frontend Mentor Challenge</h1>
+<h2>Frontend Mentor Challenge</h2>
 </div>
 
 
@@ -24,7 +24,7 @@
     <img src="/DOC/imgs/logo-desktop.svg" alt="Logo" width="500" height="80">
   </a>
 
-<h2 align="center">Planet Facts Site</h2>
+<h1 align="center">Planet Facts Site</h1>
 
   <p align="center">
     <a href="https://www.frontendmentor.io/challenges?difficulties=3"><img src="https://img.shields.io/badge/Difficulty-Intermediate-C99703?style=for-the-badge&logo=frontendmentor" alt="Difficulty - Intermediate"></a>
@@ -92,22 +92,28 @@
 
 ## Feature's
 
-- [x] Create a Book via Inputfield
-- [x] Edit Book-information
-- [x] Delete Book from List
-- [x] Change Read status of each book
-- [x] Book Libary get added in the Browsers localStorage
-- [x] Clear All functionality to delete the Libary in the local storage.
+- [x] App layout optimized for Mobile(375px), Tablet(754px) and Desktop(1440px)
+- [x] Optimized mobile - navigation layout
+- [x] Hamburger-menu is animated (with anime.js Libary)
+- [x] Use JavaScript to Change and Display the Content for each Planet by using the "data.json" file.
+- [x] Use JavaScript to toggle between "Overview", "internal Structure", and "Surface Geology" tabs
+- [x] For each Planet page, use different background colors for the Hover/focus state.
+- [x] Change arrangement of each page component on Mobile, Tablet and Desktop via grid-template-area.
+- [x] 
+
     
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Screenshot
-![screenshot](./screenshot/libary-app-screenshot.png)
+| Mobile | Tablet | Desktop |
+|--------|--------|---------|
+|   ![mobile](/DOC/screenshot/planetFacts-mobile.png)     |  ![tablet](/DOC/screenshot/planetFacts-tablet.png)     |    ![desktop](/DOC/screenshot/planetFacts-desktop.png)     |
+
 ## Animation 
 
-![animation](/screenshot/animationApp.gif)
+![animation](/DOC/animation/Animation.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -115,8 +121,7 @@
 
 ## Acknowledgments
 
-* [Local Storage](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
-Good and simple explanation of how to use the localStorage API in the browser.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
