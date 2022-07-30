@@ -1,5 +1,5 @@
 <div align="center">
-<h1>FrontEndMentor Challenge</h1>
+<h1>Frontend Mentor Challenge</h1>
 </div>
 
 
@@ -20,19 +20,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="/img/the-odin-img.png" alt="Logo" width="300" height="80">
+  <a href="https://github.com/astragenius/planet-facts-site">
+    <img src="/DOC/imgs/logo-desktop.svg" alt="Logo" width="500" height="80">
   </a>
 
-<h3 align="center">Libary APP</h3>
+<h3 align="center">Planet Facts Site</h3>
 
   <p align="center">
-    The Odin Project Assignment
+    <a href="https://www.frontendmentor.io/challenges?difficulties=3"><img src="https://img.shields.io/badge/Difficulty-Intermediate-C99703?style=for-the-badge&logo=frontendmentor" alt="Difficulty - Intermediate"></a>
     <br />
     <br />
-    <a href="https://top-libary-app.vercel.app/">View Demo</a>
+    <a href="https://planet-facts-site-alpha.vercel.app/">View Demo</a>
     ·
-    <a href="https://www.theodinproject.com/lessons/node-path-javascript-library">Link to the Assignment</a>
+    <a href=https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f>Link to the Challenge</a>
   </p>
 </div>
 
@@ -78,7 +78,13 @@
 
 </div>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
+### Tools that i Use
+![Es-lint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white) 
+![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
