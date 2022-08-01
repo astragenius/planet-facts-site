@@ -1618,7 +1618,7 @@ const RenderPlanet = (() => {
             planetGeology.src = '#'
             const overviewImage = planetImages.planet
             const overviewPlanet = document.querySelector('.planet-img')
-            ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.planetTransition)()
+
             overviewPlanet.src = overviewImage
             wikiLink.href = planetData.overview.source
             setContent.getOverview()
@@ -1627,7 +1627,7 @@ const RenderPlanet = (() => {
             planetGeology.src = '#'
             const image = planetImages.internal
             const planet = document.querySelector('.planet-img')
-            ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.planetTransition)()
+            planet.src = ''
             planet.src = image
             wikiLink.href = planetData.structure.source
             setContent.getStructure()

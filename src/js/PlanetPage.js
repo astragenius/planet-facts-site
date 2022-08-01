@@ -116,7 +116,7 @@ export const RenderPlanet = (() => {
             planetGeology.src = '#'
             const overviewImage = planetImages.planet
             const overviewPlanet = document.querySelector('.planet-img')
-            planetTransition()
+
             overviewPlanet.src = overviewImage
             wikiLink.href = planetData.overview.source
             setContent.getOverview()
@@ -125,7 +125,7 @@ export const RenderPlanet = (() => {
             planetGeology.src = '#'
             const image = planetImages.internal
             const planet = document.querySelector('.planet-img')
-            planetTransition()
+            planet.src = ''
             planet.src = image
             wikiLink.href = planetData.structure.source
             setContent.getStructure()
