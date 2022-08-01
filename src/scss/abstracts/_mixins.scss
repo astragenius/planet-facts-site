@@ -9,4 +9,11 @@
       @content;
     }
   }
+
+  @mixin focus-visible($color) {
+    &:focus-visible, &:focus {
+      outline: rem(3) dotted $color;
+      outline-offset: rem(5);
+    }
+  }
   

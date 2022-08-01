@@ -774,6 +774,14 @@ header {
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
+.tap-btn.focus-visible, .tap-btn:focus {
+  outline: 0.1875rem dotted red;
+  outline-offset: 0.3125rem;
+}
+.tap-btn:focus-visible, .tap-btn:focus {
+  outline: 0.1875rem dotted red;
+  outline-offset: 0.3125rem;
+}
 .tap-btn:hover {
   background-color: hsla(240, 6%, 54%,0.4);
   background-color: hsl(var(--cl-light-grey)/0.4);
@@ -900,6 +908,14 @@ header {
     color: hsl(0, 0%, 100%);
     color: hsl(var(--cl-light));
   }
+  .main-navigation-item a.focus-visible, .main-navigation-item a:focus {
+    outline: 0.1875rem dotted red;
+    outline-offset: 0.3125rem;
+  }
+  .main-navigation-item a:focus-visible, .main-navigation-item a:focus {
+    outline: 0.1875rem dotted red;
+    outline-offset: 0.3125rem;
+  }
 }
 @media screen and (min-width: 48em) {
   .main-navigation-item {
@@ -938,6 +954,14 @@ header {
   border: none;
   padding: 0;
 }
+.nav-mobile-btn.focus-visible, .nav-mobile-btn:focus {
+  outline: 0.1875rem dotted red;
+  outline-offset: 0.3125rem;
+}
+.nav-mobile-btn:focus-visible, .nav-mobile-btn:focus {
+  outline: 0.1875rem dotted red;
+  outline-offset: 0.3125rem;
+}
 @media screen and (min-width: 48em) {
   .nav-mobile-btn {
     display: none;
@@ -975,6 +999,16 @@ header {
 
 .planet-content {
   max-width: 21.875rem;
+}
+
+.wiki-link a.focus-visible, .wiki-link a:focus {
+  outline: 0.1875rem dotted red;
+  outline-offset: 0.3125rem;
+}
+
+.wiki-link a:focus-visible, .wiki-link a:focus {
+  outline: 0.1875rem dotted red;
+  outline-offset: 0.3125rem;
 }
 
 .planet-text {

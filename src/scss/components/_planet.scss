@@ -11,9 +11,6 @@
     position: relative;
 }
 
-.planet-img {
-    
-}
 
 
 .planet-geology {
@@ -29,6 +26,11 @@
 
 .planet-content {
     max-width: rem(350);
+}
+
+.wiki-link a{
+
+    @include focus-visible(red);
 }
 
 
