@@ -59,7 +59,7 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    padding-inline: rem(24); 
+    padding-inline: rem(25); 
 
     margin: 0;
 
@@ -74,7 +74,7 @@
         gap: rem(10);
         position: relative;
         text-decoration: none;
-        color: hsl(var(--cl-light) / 0.75 );
+        color: hsl(var(--cl-light));
         font-size: rem(20);
         font-weight: 700;
 
@@ -119,6 +119,7 @@
     width: rem(20);
     aspect-ratio: 1;
     border-radius: 50%;
+    margin-right: rem(24);
 
     @include breakpoint-up('tiny') {
         display: none;
