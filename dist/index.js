@@ -1358,6 +1358,7 @@ function openAnimation() {
     (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
         targets: '.nav-mobile-btn .line1',
         rotate: '45deg',
+        backgroundColor: '#979797',
         translateY: '4px',
         margin: '0px',
         duration: 160,
@@ -1373,6 +1374,7 @@ function openAnimation() {
     ;(0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
         targets: '.nav-mobile-btn .line3',
         rotate: '-45deg',
+        backgroundColor: '#979797',
         translateY: '-5px',
         margin: '0px',
         duration: 160,
@@ -1383,6 +1385,7 @@ function closeAnimation() {
     (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
         targets: '.nav-mobile-btn .line1',
         rotate: '0deg',
+        backgroundColor: '#fff',
         translateY: '0px',
         marginTop: '5px',
         duration: 120,
@@ -1398,6 +1401,7 @@ function closeAnimation() {
     ;(0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
         targets: '.nav-mobile-btn .line3',
         rotate: '0deg',
+        backgroundColor: '#fff',
         translateY: '0px',
         marginTop: '5px',
         duration: 160,

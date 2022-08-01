@@ -4,6 +4,7 @@ export function openAnimation() {
     anime({
         targets: '.nav-mobile-btn .line1',
         rotate: '45deg',
+        backgroundColor: '#979797',
         translateY: '4px',
         margin: '0px',
         duration: 160,
@@ -19,6 +20,7 @@ export function openAnimation() {
     anime({
         targets: '.nav-mobile-btn .line3',
         rotate: '-45deg',
+        backgroundColor: '#979797',
         translateY: '-5px',
         margin: '0px',
         duration: 160,
@@ -29,6 +31,7 @@ export function closeAnimation() {
     anime({
         targets: '.nav-mobile-btn .line1',
         rotate: '0deg',
+        backgroundColor: '#fff',
         translateY: '0px',
         marginTop: '5px',
         duration: 120,
@@ -44,6 +47,7 @@ export function closeAnimation() {
     anime({
         targets: '.nav-mobile-btn .line3',
         rotate: '0deg',
+        backgroundColor: '#fff',
         translateY: '0px',
         marginTop: '5px',
         duration: 160,
