@@ -46,6 +46,11 @@
   
 .no-scroll {
    overflow: hidden;
+
+   @include breakpoint-up('tiny') {
+
+      overflow: scroll;
+   }
 }
 
 .uppercase {

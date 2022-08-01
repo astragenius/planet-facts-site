@@ -326,6 +326,11 @@ html {
 .no-scroll {
   overflow: hidden;
 }
+@media screen and (min-width: 48em) {
+  .no-scroll {
+    overflow: scroll;
+  }
+}
 
 .uppercase {
   text-transform: uppercase;

@@ -131,8 +131,6 @@
 
 Astragenius - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Project Link: [Libary APP](https://github.com/astragenius/TOP-Libary-App)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
