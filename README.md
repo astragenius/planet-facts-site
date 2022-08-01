@@ -92,14 +92,15 @@
 
 ## Feature's
 
-- [x] App layout optimized for Mobile(375px), Tablet(754px) and Desktop(1440px)
+- [x] App layout optimized for Mobile(375px), Tablet(768px) and Desktop(1440px)
 - [x] Optimized mobile - navigation layout
 - [x] Hamburger-menu is animated (with anime.js Libary)
+- [x] The mobile-navigation menu is animated with plain css
 - [x] Use JavaScript to Change and Display the Content for each Planet by using the "data.json" file.
 - [x] Use JavaScript to toggle between "Overview", "internal Structure", and "Surface Geology" tabs
 - [x] For each Planet page, use different background colors for the Hover/focus state.
 - [x] Change arrangement of each page component on Mobile, Tablet and Desktop via grid-template-area.
-- [x] 
+
 
     
 
