@@ -31,7 +31,6 @@ import uranusGeo from '../assets/images/geology-uranus.png'
 import neptuneImg from '../assets/images/planet-neptune.svg'
 import neptuneInternal from '../assets/images/planet-neptune-internal.svg'
 import neptuneGeo from '../assets/images/geology-neptune.png'
-import { planetTransition, planetNameTransition } from './Animation'
 
 let planetData = data[0]
 const setPlanetContent = function () {
@@ -43,7 +42,6 @@ const setPlanetContent = function () {
     function getName() {
         const name = planetData.name
         h2.textContent = name
-        planetNameTransition()
     }
     function getOverview() {
         const overview = planetData.overview

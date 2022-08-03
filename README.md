@@ -120,7 +120,7 @@
 
 
 
-## Acknowledgments
+
 
 
 
@@ -130,7 +130,8 @@
 <!-- CONTACT -->
 ## Contact
 
-Astragenius - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Astragenius - [@twitter_handle](https://twitter.com/twitter_handle)
+Frontend Mentor Profile - [@Astragenius](https://www.frontendmentor.io/profile/astragenius)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
