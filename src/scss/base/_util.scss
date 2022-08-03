@@ -49,7 +49,7 @@
 
    @include breakpoint-up('tiny') {
 
-      overflow: scroll;
+      overflow: none;
    }
 }
 
