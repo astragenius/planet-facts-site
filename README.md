@@ -86,7 +86,7 @@
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
 
-
+[Animation Libary - anime.js](https://animejs.com/)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
