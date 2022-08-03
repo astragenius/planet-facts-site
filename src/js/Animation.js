@@ -54,22 +54,3 @@ export function closeAnimation() {
         easing: 'spring(1, 80, 10, 0)',
     })
 }
-
-export function planetTransition() {
-    anime({
-        targets: '.planet-img',
-        opacity: [{ value: 0 }, { value: 0.5 }, { value: 1 }],
-        easing: 'easeInOutSine',
-        duration: 400,
-        //opacity: [0, 0.5, 1],
-    })
-}
-
-export function planetNameTransition() {
-    anime({
-        targets: '.planet-text > h2',
-        opacity: [{ value: 0 }, { value: 0.2 }, { value: 1 }],
-        easing: 'easeInOutSine',
-        duration: 1000,
-    })
-}
