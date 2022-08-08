@@ -41,12 +41,28 @@ const setPlanetContent = function () {
 
     function getName() {
         const name = planetData.name
+        h2.classList.add('animate__lightSpeedInRight')
         h2.textContent = name
+        h2.addEventListener(
+            'animationend',
+            () => {
+                h2.classList.remove('animate__lightSpeedInRight')
+            },
+            { once: true }
+        )
     }
     function getOverview() {
         const overview = planetData.overview
+        p.classList.add('animate__fadeIn')
         p.textContent = overview.content
         wikiLink.src = overview.source
+        p.addEventListener(
+            'animationend',
+            () => {
+                p.classList.remove('animate__fadeIn')
+            },
+            { once: true }
+        )
     }
 
     function getStructure() {

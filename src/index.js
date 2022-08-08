@@ -1,4 +1,5 @@
 import './scss/index.scss'
+
 import { toggleNavMenu } from './js/MobileNav'
 import { RenderPlanet } from './js/PlanetPage'
 

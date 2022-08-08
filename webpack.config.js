@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const json5 = require('json5')
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     devtool: 'source-map',
 
     entry: {
