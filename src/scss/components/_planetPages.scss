@@ -37,6 +37,7 @@
 
         &:focus {
                 box-shadow: inset 0px -5px 0px 0px hsl(var(--cl-mercury) );
+                
                 @include breakpoint-up('tiny') {
                     box-shadow: none;
                     background-color: hsl(var(--cl-mercury) );

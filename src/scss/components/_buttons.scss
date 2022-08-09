@@ -8,6 +8,8 @@
     justify-content: space-between;
     gap: rem(10);
     
+ 
+    
     @include breakpoint-up('tiny') {
         border: 0;
         flex-direction: column;
@@ -27,6 +29,7 @@
     flex: 1;
     padding: rem(20) rem(0);
     cursor: pointer;
+    letter-spacing: 1.93px;
     transition: 300ms ease-in-out;
     
   
@@ -36,11 +39,17 @@
         border-color: transparent;
     }
 
+    &:focus {
+        color: hsl(var(--cl-light));
+    }
+
    
 
     @include breakpoint-up('tiny') {
         border: 1px solid hsl(var(--cl-light) / 0.2);
         text-align: left;
+        color: hsl(var(--cl-light));
+        opacity: 1;
         padding: rem(15) rem(20);
         
     }
