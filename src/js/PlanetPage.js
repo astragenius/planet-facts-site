@@ -42,42 +42,28 @@ const setPlanetContent = function () {
 
     function getName() {
         const name = planetData.name
-        //h2.classList.add('animate__lightSpeedInRight')
         h2.textContent = name
-        /*  h2.addEventListener(
-            'animationend',
-            () => {
-                h2.classList.remove('animate__lightSpeedInRight')
-            },
-            { once: true }
-        ) */
-
-        animateCSS(h2, 'lightSpeedInRight')
+        animateCSS(h2, 'fadeInDown')
     }
     function getOverview() {
         const overview = planetData.overview
-        p.classList.add('animate__fadeIn')
         p.textContent = overview.content
         wikiLink.src = overview.source
-        p.addEventListener(
-            'animationend',
-            () => {
-                p.classList.remove('animate__fadeIn')
-            },
-            { once: true }
-        )
+        animateCSS(p, 'fadeIn')
     }
 
     function getStructure() {
         const structure = planetData.structure
         p.textContent = structure.content
         wikiLink.src = structure.source
+        animateCSS(p, 'fadeIn')
     }
 
     function getGeology() {
         const geology = planetData.geology
         p.textContent = geology.content
         wikiLink.src = geology.source
+        animateCSS(p, 'fadeIn')
     }
 
     return { getName, getOverview, getStructure, getGeology }
@@ -109,9 +95,16 @@ export const RenderPlanet = (() => {
             planetFactsContainer.querySelector('.temperature-js')
 
         rotationFact.textContent = rotation
+        animateCSS(rotationFact, 'flipInX')
+
         revolutionFact.textContent = revolution
+        animateCSS(revolutionFact, 'flipInX')
+
         radiusFact.textContent = radius
+        animateCSS(radiusFact, 'flipInX')
+
         temperatureFact.textContent = temperature
+        animateCSS(temperatureFact, 'flipInX')
     }
 
     function taps() {
@@ -124,7 +117,9 @@ export const RenderPlanet = (() => {
         const planetGeology = document.querySelector('.planet-geology')
         const overviewPlanet = document.querySelector('.planet-img')
         const wikiLink = document.querySelector('.wiki-js')
+
         overviewPlanet.src = overviewImage
+        animateCSS(overviewPlanet, 'bounceIn')
         wikiLink.href = planetData.overview.source
         planetGeology.src = '#'
         setContent.getName()
@@ -135,6 +130,8 @@ export const RenderPlanet = (() => {
             const overviewPlanet = document.querySelector('.planet-img')
 
             overviewPlanet.src = overviewImage
+            animateCSS(overviewPlanet, 'bounceIn')
+
             wikiLink.href = planetData.overview.source
             setContent.getOverview()
         })
@@ -144,22 +141,24 @@ export const RenderPlanet = (() => {
             const planet = document.querySelector('.planet-img')
             planet.src = ''
             planet.src = image
+            animateCSS(planet, 'bounceIn')
             wikiLink.href = planetData.structure.source
             setContent.getStructure()
         })
         geology.addEventListener('click', () => {
             const image = planetImages.geology
             planetGeology.src = image
+            animateCSS(planetGeology, 'fadeInDown')
             wikiLink.href = planetData.geology.source
             setContent.getGeology()
         })
     }
 
-    function planet() {
+    function renderPlanetSite() {
         taps()
         setContent.getOverview()
         planetFactsContent()
     }
 
-    return { planet, setState, setPlanetSize }
+    return { renderPlanetSite, setState, setPlanetSize }
 })()

@@ -1543,42 +1543,28 @@ const setPlanetContent = function () {
 
     function getName() {
         const name = planetData.name
-        //h2.classList.add('animate__lightSpeedInRight')
         h2.textContent = name
-        /*  h2.addEventListener(
-            'animationend',
-            () => {
-                h2.classList.remove('animate__lightSpeedInRight')
-            },
-            { once: true }
-        ) */
-
-        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(h2, 'lightSpeedInRight')
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(h2, 'fadeInDown')
     }
     function getOverview() {
         const overview = planetData.overview
-        p.classList.add('animate__fadeIn')
         p.textContent = overview.content
         wikiLink.src = overview.source
-        p.addEventListener(
-            'animationend',
-            () => {
-                p.classList.remove('animate__fadeIn')
-            },
-            { once: true }
-        )
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(p, 'fadeIn')
     }
 
     function getStructure() {
         const structure = planetData.structure
         p.textContent = structure.content
         wikiLink.src = structure.source
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(p, 'fadeIn')
     }
 
     function getGeology() {
         const geology = planetData.geology
         p.textContent = geology.content
         wikiLink.src = geology.source
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(p, 'fadeIn')
     }
 
     return { getName, getOverview, getStructure, getGeology }
@@ -1609,9 +1595,16 @@ const RenderPlanet = (() => {
             planetFactsContainer.querySelector('.temperature-js')
 
         rotationFact.textContent = rotation
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(rotationFact, 'flipInX')
+
         revolutionFact.textContent = revolution
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(revolutionFact, 'flipInX')
+
         radiusFact.textContent = radius
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(radiusFact, 'flipInX')
+
         temperatureFact.textContent = temperature
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(temperatureFact, 'flipInX')
     }
 
     function taps() {
@@ -1624,7 +1617,9 @@ const RenderPlanet = (() => {
         const planetGeology = document.querySelector('.planet-geology')
         const overviewPlanet = document.querySelector('.planet-img')
         const wikiLink = document.querySelector('.wiki-js')
+
         overviewPlanet.src = overviewImage
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(overviewPlanet, 'bounceIn')
         wikiLink.href = planetData.overview.source
         planetGeology.src = '#'
         setContent.getName()
@@ -1635,6 +1630,8 @@ const RenderPlanet = (() => {
             const overviewPlanet = document.querySelector('.planet-img')
 
             overviewPlanet.src = overviewImage
+            ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(overviewPlanet, 'bounceIn')
+
             wikiLink.href = planetData.overview.source
             setContent.getOverview()
         })
@@ -1644,24 +1641,26 @@ const RenderPlanet = (() => {
             const planet = document.querySelector('.planet-img')
             planet.src = ''
             planet.src = image
+            ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(planet, 'bounceIn')
             wikiLink.href = planetData.structure.source
             setContent.getStructure()
         })
         geology.addEventListener('click', () => {
             const image = planetImages.geology
             planetGeology.src = image
+            ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(planetGeology, 'fadeInDown')
             wikiLink.href = planetData.geology.source
             setContent.getGeology()
         })
     }
 
-    function planet() {
+    function renderPlanetSite() {
         taps()
         setContent.getOverview()
         planetFactsContent()
     }
 
-    return { planet, setState, setPlanetSize }
+    return { renderPlanetSite, setState, setPlanetSize }
 })()
 
 
@@ -2033,50 +2032,50 @@ const neptune = document.querySelector('.neptune')
 
 mercury.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Mercury')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('mercury')
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
 venus.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Venus')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('venus')
 
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
 earth.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Earth')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('earth')
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
 mars.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Mars')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('mars')
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
 jupiter.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Jupiter')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('jupiter')
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
 saturn.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Saturn')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('saturn')
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
 uranus.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Uranus')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('uranus')
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
 neptune.addEventListener('click', () => {
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setState('Neptune')
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('neptune')
     ;(0,_js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)()
 })
@@ -2084,7 +2083,7 @@ neptune.addEventListener('click', () => {
 open.addEventListener('click', _js_MobileNav__WEBPACK_IMPORTED_MODULE_1__.toggleNavMenu)
 
 document.addEventListener('DOMContentLoaded', () => {
-    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.planet()
+    _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.renderPlanetSite()
     _js_PlanetPage__WEBPACK_IMPORTED_MODULE_2__.RenderPlanet.setPlanetSize('mercury')
 })
 
