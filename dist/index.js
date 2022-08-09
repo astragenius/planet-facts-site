@@ -1346,6 +1346,7 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "animateCSS": () => (/* binding */ animateCSS),
 /* harmony export */   "closeAnimation": () => (/* binding */ closeAnimation),
 /* harmony export */   "openAnimation": () => (/* binding */ openAnimation)
 /* harmony export */ });
@@ -1404,6 +1405,25 @@ function closeAnimation() {
         marginTop: '5px',
         duration: 160,
         easing: 'spring(1, 80, 10, 0)',
+    })
+}
+
+const animateCSS = (element, animation, prefix = 'animate__') => {
+    new Promise((resolve, reject) => {
+        const animationName = `${prefix}${animation}`
+        const node = element
+
+        node.classList.add(`${prefix}animated`, animationName)
+
+        function handleAnimationEnd(event) {
+            event.stopPropagation()
+            node.classList.remove(`${prefix}animated`, animationName)
+            resolve('Animation ended')
+        }
+
+        node.addEventListener('animationend', handleAnimationEnd, {
+            once: true,
+        })
     })
 }
 
@@ -1478,6 +1498,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_planet_neptune_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/images/planet-neptune.svg */ "./src/assets/images/planet-neptune.svg");
 /* harmony import */ var _assets_images_planet_neptune_internal_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../assets/images/planet-neptune-internal.svg */ "./src/assets/images/planet-neptune-internal.svg");
 /* harmony import */ var _assets_images_geology_neptune_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../assets/images/geology-neptune.png */ "./src/assets/images/geology-neptune.png");
+/* harmony import */ var _Animation__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./Animation */ "./src/js/Animation.js");
+
 
 
 
@@ -1521,15 +1543,17 @@ const setPlanetContent = function () {
 
     function getName() {
         const name = planetData.name
-        h2.classList.add('animate__lightSpeedInRight')
+        //h2.classList.add('animate__lightSpeedInRight')
         h2.textContent = name
-        h2.addEventListener(
+        /*  h2.addEventListener(
             'animationend',
             () => {
                 h2.classList.remove('animate__lightSpeedInRight')
             },
             { once: true }
-        )
+        ) */
+
+        ;(0,_Animation__WEBPACK_IMPORTED_MODULE_25__.animateCSS)(h2, 'lightSpeedInRight')
     }
     function getOverview() {
         const overview = planetData.overview

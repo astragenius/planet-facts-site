@@ -31,6 +31,7 @@ import uranusGeo from '../assets/images/geology-uranus.png'
 import neptuneImg from '../assets/images/planet-neptune.svg'
 import neptuneInternal from '../assets/images/planet-neptune-internal.svg'
 import neptuneGeo from '../assets/images/geology-neptune.png'
+import { animateCSS } from './Animation'
 
 let planetData = data[0]
 const setPlanetContent = function () {
@@ -41,15 +42,17 @@ const setPlanetContent = function () {
 
     function getName() {
         const name = planetData.name
-        h2.classList.add('animate__lightSpeedInRight')
+        //h2.classList.add('animate__lightSpeedInRight')
         h2.textContent = name
-        h2.addEventListener(
+        /*  h2.addEventListener(
             'animationend',
             () => {
                 h2.classList.remove('animate__lightSpeedInRight')
             },
             { once: true }
-        )
+        ) */
+
+        animateCSS(h2, 'lightSpeedInRight')
     }
     function getOverview() {
         const overview = planetData.overview
