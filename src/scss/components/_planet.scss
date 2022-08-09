@@ -28,11 +28,6 @@
     max-width: rem(350);
 }
 
-.wiki-link a{
-
-    @include focus-visible(red);
-}
-
 
 .planet-text {
     text-align: center;
