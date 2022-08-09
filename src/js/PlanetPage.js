@@ -123,7 +123,7 @@ export const RenderPlanet = (() => {
         wikiLink.href = planetData.overview.source
         planetGeology.src = '#'
         setContent.getName()
-
+        overview.focus()
         overview.addEventListener('click', () => {
             planetGeology.src = '#'
             const overviewImage = planetImages.planet
