@@ -87,6 +87,7 @@
 ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
 
 [Animation Libary - anime.js](https://animejs.com/)
+[Animate.css](https://animate.style/)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -133,7 +134,7 @@
 <!-- CONTACT -->
 ## Contact
 
-Astragenius - [@twitter_handle](https://twitter.com/twitter_handle)
+Matthias - [@AstraKarl](https://twitter.com/AstraKarl)
 Frontend Mentor Profile - [@Astragenius](https://www.frontendmentor.io/profile/astragenius)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
