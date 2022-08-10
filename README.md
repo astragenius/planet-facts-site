@@ -94,8 +94,9 @@
 
 - [x] App layout optimized for Mobile(375px), Tablet(768px) and Desktop(1440px)
 - [x] Optimized mobile - navigation layout
-- [x] Hamburger-menu is animated (with anime.js Libary)
-- [x] The mobile-navigation menu is animated with plain css
+- [x] Hamburger-menu is animated (with anime.js Library)
+- [x] Planet-image transition and text transition are animated with the Animate.css library
+- [x] The mobile-navigation menu is animated with plain CSS
 - [x] Use JavaScript to Change and Display the Content for each Planet by using the "data.json" file.
 - [x] Use JavaScript to toggle between "Overview", "internal Structure", and "Surface Geology" tabs
 - [x] For each Planet page, use different background colors for the Hover/focus state.
@@ -114,7 +115,9 @@
 
 ## Animation 
 
-![animation](/DOC/animation/Animation.gif)
+![animation](/DOC/animation/desktop.gif)
+![animation](/DOC/animation/mobile.gif)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
