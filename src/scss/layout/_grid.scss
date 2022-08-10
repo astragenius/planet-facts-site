@@ -71,3 +71,21 @@
     grid-area: planet-facts;
     align-self: center;
 }
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+    height: 10vh;
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        margin-inline: 0.5em;
+        color: white;
+        font-weight: bold;
+    }
+}
+
